@@ -1,0 +1,9 @@
+# IDA
+.idea
+**/*.iml
+
+# Compilitions
+target
+bin
+out
+
