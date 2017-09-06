@@ -38,8 +38,12 @@ Hier durch wird ermöglicht, dass sie über das Terminal SQL-Plus in der richtig
 
 Nachdem sie den Rechner neugestartet haben oder im Terminal ihre bash durch den Befehl `bash` aktualisiert haben, sollten sie in der Lage sein, SQL-Plus im Terminal auszuführen.
 
+Melden sie sich mit ihren Zugangsdaten am Datenbankserver an.
+
+Beispiel: `sqlplus max.mustermann@pdublin1`
+
 ##### Troubleshooting
-Je nach Einstellung der bash kann es dazu kommen, dass das Arbeiten mit Zeilenumbrüchen als schwierig erweißt. Abhilfe kann hier das Programm `rlwrap` schaffen. Installieren sie `rlwrap` mit
+Je nach Einstellung der bash kann es dazu kommen, dass das Arbeiten mit Zeilenumbrüchen sich acls schwierig erweißt. Abhilfe kann hier das Programm `rlwrap` schaffen. Installieren sie `rlwrap` mit
 ```bash
 sudo apt-get update;
 sudo apt-get dist-upgrade;
