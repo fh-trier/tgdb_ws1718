@@ -18,12 +18,56 @@ SQL-Plus zu installieren wird ein Oracle-Account benötigt. Dies kann auf der In
 #### Linux (Debian/Ubuntu/Linux Mint)
 Laden Sie von den offiziellen [Paketquellen](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html) das ZIP-Archiv *instantclient-basic-linux.x64.zip* herunter. Dieses ZIP-Archiv enthält die Basis Applikation. Laden sie anschließend aus den [Paketquellen](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html) die SQL-Plus Erweiterung als ZIP-Archiv herunter mit dem Namen *instantclient-sqlplus-linux.x64.zip*.
 
-Verschieben Sie den Inhalt beider Archive in Verzeichnis. Das Verzeichnis sollte einen ähnlichen Inhalt aufweisen wie auf dem folgendem Abbild zu erkennen.
+Verschieben Sie den Inhalt beider Archive in Verzeichnis. Das Verzeichnis sollte einen ähnlichen Inhalt aufweisen wie auf dem folgendem Abbild zu erkennen. Das Verzeichnis `network` wird später angelegt.
 
 ![terminal-list-instantclient-directory](./installation/terminal-list-instantclient-directory.png)
+
+Verschieben Sie das Verzeichnis unter `/opt/oracle` Falls das Verzeichnis `/opt/oracle` nicht vorhanden ist, legen Sie es an.
+
+Öffnen sie die Datei `~/.bashrc` und fügen Sie am Ende der Datei folgendes ein.
+```bash
+export PATH="$PATH:/opt/oracle/instantclient"
+export LD_LIBRARY_PATH="/opt/oracle/instantclient"
+export ORACLE_HOME="/opt/oracle/instantclient"
+export ORACLE_BASE="/opt/oracle/instantclient"
+export NLS_LANG="GERMAN_GERMANY.UTF8"
+export TNS_ADMIN="/opt/oracle/instantclient/network/admin"
+```
+
+Hier durch wird ermöglicht, dass sie über das Terminal SQL-Plus in der richtigen Sprache ausführen können. Erstellen sie zum Verbindungsaufbau zu der Oracle Datenbank der Hochschule das Verzeichnis `/opt/oracle/instantclient/network/admin` und kopieren sie dort die Datei `tns.ora` hin, die im Vorlesungsverzeichnis Ihres Dozenten hinterlegt ist.
+
+Nachdem sie den Rechner neugestartet haben oder im Terminal ihre bash durch den Befehl `bash` aktualisiert haben, sollten sie in der Lage sein, SQL-Plus im Terminal auszuführen.
+
+##### Troubleshooting
+Je nach Einstellung der bash kann es dazu kommen, dass das Arbeiten mit Zeilenumbrüchen als schwierig erweißt. Abhilfe kann hier das Programm `rlwrap` schaffen. Installieren sie `rlwrap` mit
+```bash
+sudo apt-get update;
+sudo apt-get dist-upgrade;
+sudo apt-get install rlwrap;
+```
+
+Setzen die `rlwrap` im Terminal vor den Aufruf von SQL-Plus.
+
+Beispiel: `rlwrap sqlplus max.mustermann@pdublin1`
 
 #### Windows
 
 ### git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
