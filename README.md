@@ -15,12 +15,15 @@ Möchte man mit seinem privaten Rechner außerhalb des Netzwerkes der Hochschule
 ### SQL-Plus
 SQL-Plus zu installieren wird ein Oracle-Account benötigt. Dies kann auf der Internetseite von Oracle [erstellt](https://profile.oracle.com/myprofile/account/create-account.jspx) werden. Nach der Registrierung und erfolgreichem Login kann das Programm sqlplus von Oracle's offiziellen [Paketquellen](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html) bezogen werden. Es ist für mehrere Betriebssysteme vorhanden. Es wird die Installation von SQL-Plus auf Linux und Windows in den weiteren Abschnitten beschrieben.
 
-#### Linux
+#### Linux (Debian/Ubuntu/Linux Mint)
+Laden Sie von den offiziellen [Paketquellen](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html) das ZIP-Archiv *instantclient-basic-linux.x64.zip* herunter. Dieses ZIP-Archiv enthält die Basis Applikation. Laden sie anschließend aus den [Paketquellen](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html) die SQL-Plus Erweiterung als ZIP-Archiv herunter mit dem Namen *instantclient-sqlplus-linux.x64.zip*.
 
+Verschieben Sie den Inhalt beider Archive in Verzeichnis. Das Verzeichnis sollte einen ähnlichen Inhalt aufweisen wie auf dem folgendem Abbild zu erkennen.
+
+![terminal-list-instantclient-directory](./installation/terminal-list-instantclient-directory.png)
 
 #### Windows
 
 ### git
-
 
 
