@@ -1,0 +1,6 @@
+[submodule "sqlplus_installation"]
+	path = sqlplus_installation
+	url = git@github.com:volker-raschek/sqlplus_installation.git
+[submodule "git_installation"]
+	path = git_installation
+	url = git@github.com:volker-raschek/git_installation.git
