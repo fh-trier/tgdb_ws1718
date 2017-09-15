@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5A6D724-E67B-74FB-12E8-8A4F1A61A153" name="PRODUCER">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:20:06 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCER_ID" id="01449209-12D3-3877-087C-866CF017B966">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:21:48 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCER_NAME" id="4E1D86D5-7CF3-30C5-6C2A-03AB204CDCD7">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:21:48 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF358985-2EE3-DE2C-7FD5-0B2E9618FC5A" name="PRODUCER_PK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:21:48 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01449209-12D3-3877-087C-866CF017B966"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="419752ED-CED9-A981-8A19-8B3132E97531" name="PRODUCER_UN">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:21:48 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E1D86D5-7CF3-30C5-6C2A-03AB204CDCD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0963E9E1-5495-D8F8-43F9-076719FD6CB7" name="PRODUCER_IDX">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:46:22 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01449209-12D3-3877-087C-866CF017B966"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

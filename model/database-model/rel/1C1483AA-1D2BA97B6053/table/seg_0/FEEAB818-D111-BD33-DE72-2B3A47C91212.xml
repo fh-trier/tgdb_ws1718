@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FEEAB818-D111-BD33-DE72-2B3A47C91212" name="RECEIPT">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:24:34 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECEIPT_ID" id="43132F83-F6E2-7A25-1888-63915AB8AF67">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="43BEBBC1-FB28-686D-1F50-C8BBC7AEED37">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F64FFCD-D4FB-D4E0-691B-B2B225CC0047" referredColumn="8147FA97-A1BB-D459-D279-78E3F2216DCA"/>
+</associations>
+</Column>
+<Column name="ACC_VEHIC_ID" id="5D05D610-29D6-18C9-C2F4-802A98F802D4">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66199573-4706-2609-C5CA-3056D99AAB97" referredColumn="F1F306F2-3241-A61F-2B19-3F027936CDBE"/>
+</associations>
+</Column>
+<Column name="DUTY_AMOUNT" id="68B40C28-238E-1907-8820-63936700A60D">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_ID" id="94293CC9-2DA2-3BCC-43DC-8FEFEEAA0C55">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCD5E314-7C6D-B38E-9E81-0FE5329B814E" referredColumn="93BD36FB-5B2D-B7B6-6A8A-E62CD2BCEC67"/>
+</associations>
+</Column>
+<Column name="GAS_STATION_ID" id="503D16C1-D125-39BE-65BF-0B76E209E70A">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:38:44 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_L" id="6385F9E2-BAC7-0832-F02A-A2FE1089B2FA">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KILOMETER" id="7B391BEF-E0FB-147A-3AC0-CAAC35010019">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LITER" id="D3F7E7AC-7ADE-C4F8-641C-62667FFA4A6E">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECEIPT_DATE" id="95FF0D8D-FD5D-7F2C-51B7-FDC69F2C0473">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_DATE" id="E02B85C0-75BA-4A8C-9FD7-876BBC423FEF">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="U_DATE" id="FB4FF9E7-4760-25B0-461A-D0DDD358B13F">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71F0D0D4-3A8B-23AD-9D01-671082465122" name="RECEIPT_PK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:27:38 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43132F83-F6E2-7A25-1888-63915AB8AF67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF75FA04-6EF9-DEB9-AD82-A44C5C5B9008" name="RECEIPT_IDX">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:45:41 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43132F83-F6E2-7A25-1888-63915AB8AF67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0B1BE8C-6C3E-3D06-3385-55FD0740D52B" name="RECEIPT_ACCOUNT_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:28:41 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43BEBBC1-FB28-686D-1F50-C8BBC7AEED37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7700A2A7-676D-3AE1-0C39-93D77C0ECA24" name="RECEIPT_ACC_VEHIC_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:28:41 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D05D610-29D6-18C9-C2F4-802A98F802D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCC16FCD-A819-B556-A83D-5CD202CC8CE3" name="RECEIPT_GAS_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:28:41 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94293CC9-2DA2-3BCC-43DC-8FEFEEAA0C55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
