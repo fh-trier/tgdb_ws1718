@@ -1,6 +1,11 @@
 # Tutorium - Grundlagen Datenbanken - Blatt 2
 
 ## Vorbereitungen
+* Für dieses Aufgabenblatt wird die SQL-Dump-Datei `uebung02.sql` benötigt, die sich im Verzeichnis `sql` befindet.
+* Die SQL-Dump-Datei wird in SQL-Plus mittels `start <Dateipfad/zur/sql-dump-datei.sql>` in die Datenbank importiert.
+* Beispiele
+  * Linux `start ~/Tutorium.sql`
+  * Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
 
 ## Datenbankmodell
 ![Datenbankmodell](./img/schema.png)
@@ -25,3 +30,5 @@ Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auc
 ![n-to-m-relationship](./img/n-to-m-relationship.png)
 
 > Deine schriftliche Antwort.
+
+### Aufgabe 4
