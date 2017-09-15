@@ -7,3 +7,5 @@ target
 bin
 out
 
+# dia
+*.dia~
