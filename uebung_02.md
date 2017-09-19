@@ -25,7 +25,7 @@ Was bedeuten die durchgezogenen Linien die zwischen einigen Tabellen abgebildet 
 > Deine schriftliche Antwort.
 
 ### Aufgabe 3
-Was bedeuten die gestrichelte Linie die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
+Was bedeutet die gestrichelte Linie die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
 
 #### Lösung
 > Deine schriftliche Antwort.
@@ -38,4 +38,16 @@ Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auc
 > Deine schriftliche Antwort.
 
 ### Aufgabe 4
-Was bedeutet der Buchstabe `P` und `F` neben den
+Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
+
+#### Lösung
+> Deine schriftliche Lösung.
+
+### Aufgabe 5
+Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
