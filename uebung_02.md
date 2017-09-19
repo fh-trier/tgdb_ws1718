@@ -51,3 +51,11 @@ Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl
 Deine Lösung
 ```
 
+### Aufgabe 6
+Lasse dir alle Benutzer (`SURNAME`, `FORNAME`) ausgeben, die ein Auto besitzen.
+Tipp: Schaue zuerst in die Tabelle `VEHICLE_TYPE`.
+
+#### Lösung
+```sql
+Deine Lösung
+```
