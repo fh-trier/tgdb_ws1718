@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67E9740B-4ACC-6653-0475-74AD0BD37B20" name="GAS_STATION">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:32:43 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GAS_STATION_ID" id="ACA9019C-147F-A540-FEB8-E44E945E02EB">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:33:50 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVIDER_ID" id="99E6D187-B74C-9968-9FA2-BFB778D7D09C">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:33:50 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B068F0C0-C0A0-D86C-65E1-F0E5BEA31183" referredColumn="6B4A6D5C-E27E-E201-D00C-B2521267F6D7"/>
+</associations>
+</Column>
+<Column name="COUNTRY_ID" id="C389A849-41AA-2B85-F548-4046B35AF5D2">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:33:50 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FD9E0A1-5E48-3DFB-2A03-D8F2F73186ED" referredColumn="55CA0264-2B88-6F34-EE79-B954ED388D9C"/>
+</associations>
+</Column>
+<Column name="ADDRESS_ID" id="D91E250E-93D6-C26A-C5CC-59245007FE1E">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:33:50 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0145B88-BCE0-D37C-CB26-4E4FD729E278" referredColumn="3E3F88E1-96E0-2BAC-6B9A-4ACD9C736436"/>
+</associations>
+</Column>
+<Column name="STREET" id="15AB6AB1-7F63-E0F0-A499-D5F3B3D77A99">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:33:50 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A5AA3A9-FC1B-A87F-1A66-503A73A1980F" name="GAS_STATION_PK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:33:50 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACA9019C-147F-A540-FEB8-E44E945E02EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="818ADF6D-7D17-0D8C-F7AC-61E01DD11445" name="GAS_STATION_IDX">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:43:02 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACA9019C-147F-A540-FEB8-E44E945E02EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71539B60-B4EF-F6BF-0339-3878476E94A0" name="GAS_STATION_ADDRESS_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:40:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D91E250E-93D6-C26A-C5CC-59245007FE1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D9ED655-50A1-FFFB-9E41-608D169D53C5" name="GAS_STATION_COUNTRY_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:40:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C389A849-41AA-2B85-F548-4046B35AF5D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD5C3731-2C9B-8343-835B-57864C8B4CF5" name="GAS_STATION_PROVIDER_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:40:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99E6D187-B74C-9968-9FA2-BFB778D7D09C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

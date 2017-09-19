@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7ECA39F9-1CA1-6C05-80AD-B758C3C171CB" name="ADDRESS">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:36:05 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADDRESS_ID" id="3E3F88E1-96E0-2BAC-6B9A-4ACD9C736436">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:36:57 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLZ" id="F9E56130-9047-EF8F-E31C-E3C4E614FB29">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:36:57 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="A964E791-F87F-B0C8-D888-DDACAB76B242">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:36:57 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5383B305-7538-4DEB-9E95-5B881C29D6C3" name="ADDRESS_PK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:37:16 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E3F88E1-96E0-2BAC-6B9A-4ACD9C736436"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9BF2480-6DA3-6698-4EB9-A7A53C4EAE0C" name="ADDRESS_UN">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:37:16 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9E56130-9047-EF8F-E31C-E3C4E614FB29"/>
+<colUsage columnID="A964E791-F87F-B0C8-D888-DDACAB76B242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="246C1939-2144-180E-0C20-2B6110D43462" name="ADDRESS_IDX">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-15 11:43:52 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E3F88E1-96E0-2BAC-6B9A-4ACD9C736436"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
