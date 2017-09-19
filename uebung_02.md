@@ -8,7 +8,7 @@
   * Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
 
 ## Datenbankmodell
-![Datenbankmodell](./img/schema.png)
+![Datenbankmodell](./img/datamodler_schema.png)
 
 ## Aufgaben
 
@@ -19,16 +19,23 @@ Schaue dir das Datenbankmodell an. Wofür steht hinter dem Datentyp `NUMBER` die
 > Deine schritliche Antwort.
 
 ### Aufgabe 2
-Was bedeuten an den schwarzen Linien die im Datenbankmodell Tabellen miteinander verknüpfen `1` und `n`?
+Was bedeuten die durchgezogenen Linien die zwischen einigen Tabellen abgebildet sind?.
 
 #### Lösung
 > Deine schriftliche Antwort.
 
 ### Aufgabe 3
-Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auch `n` zu `m` Beziehung genannt. Beschreiben Sie kurz die Bedeutung dieser `n` zu `m` Beziehung.
+Was bedeuten die gestrichelte Linie die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
+
+#### Lösung
+> Deine schriftliche Antwort.
+
+### Aufgabe 3
+Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auch `n` zu `m` Beziehung genannt. Beschreibe kurz die Bedeutung dieser Beziehung.
 
 ![n-to-m-relationship](./img/n-to-m-relationship.png)
 
 > Deine schriftliche Antwort.
 
 ### Aufgabe 4
+Was bedeutet der Buchstabe `P` und `F` neben den
