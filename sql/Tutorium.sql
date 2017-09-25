@@ -1,26 +1,15 @@
 --------------------------------------------------------
---  Datei erstellt -Dienstag-September-19-2017   
+--  Datei erstellt -Montag-September-25-2017   
 --------------------------------------------------------
-DROP TABLE "ACCOUNT";
-DROP TABLE "ACC_VEHIC";
-DROP TABLE "ADDRESS";
-DROP TABLE "COUNTRY";
-DROP TABLE "GAS";
-DROP TABLE "GAS_STATION";
-DROP TABLE "PRODUCER";
-DROP TABLE "PROVIDER";
-DROP TABLE "RECEIPT";
-DROP TABLE "VEHICLE";
-DROP TABLE "VEHICLE_TYPE";
 --------------------------------------------------------
 --  DDL for Table ACCOUNT
 --------------------------------------------------------
 
   CREATE TABLE "ACCOUNT" 
    (	"ACCOUNT_ID" NUMBER(38,0), 
-	"SURNAME" VARCHAR2(32), 
-	"FORENAME" VARCHAR2(32), 
-	"EMAIL" VARCHAR2(32), 
+	"SURNAME" VARCHAR2(32 BYTE), 
+	"FORENAME" VARCHAR2(32 BYTE), 
+	"EMAIL" VARCHAR2(32 BYTE), 
 	"C_DATE" DATE, 
 	"U_DATE" DATE
    ) ;
@@ -32,8 +21,8 @@ DROP TABLE "VEHICLE_TYPE";
    (	"ACC_VEHIC_ID" NUMBER(38,0), 
 	"ACCOUNT_ID" NUMBER(38,0), 
 	"VEHICLE_ID" NUMBER(38,0), 
-	"IDENTICATOR" VARCHAR2(16), 
-	"ALIAS" VARCHAR2(32), 
+	"IDENTICATOR" VARCHAR2(16 BYTE), 
+	"ALIAS" VARCHAR2(32 BYTE), 
 	"BUY_PRICE" NUMBER(38,2), 
 	"BUY_KILOMETER" NUMBER(38,3), 
 	"SOLD_PRICE" NUMBER(38,2), 
@@ -51,7 +40,7 @@ DROP TABLE "VEHICLE_TYPE";
   CREATE TABLE "ADDRESS" 
    (	"ADDRESS_ID" NUMBER(38,0), 
 	"PLZ" NUMBER(5,0), 
-	"CITY" VARCHAR2(32)
+	"CITY" VARCHAR2(32 BYTE)
    ) ;
 --------------------------------------------------------
 --  DDL for Table COUNTRY
@@ -59,7 +48,7 @@ DROP TABLE "VEHICLE_TYPE";
 
   CREATE TABLE "COUNTRY" 
    (	"COUNTRY_ID" NUMBER(38,0), 
-	"COUNTRY_NAME" VARCHAR2(32), 
+	"COUNTRY_NAME" VARCHAR2(32 BYTE), 
 	"DUTY_AMOUNT" NUMBER(3,2)
    ) ;
 --------------------------------------------------------
@@ -68,7 +57,7 @@ DROP TABLE "VEHICLE_TYPE";
 
   CREATE TABLE "GAS" 
    (	"GAS_ID" NUMBER(38,0), 
-	"GAS_NAME" VARCHAR2(32)
+	"GAS_NAME" VARCHAR2(32 BYTE)
    ) ;
 --------------------------------------------------------
 --  DDL for Table GAS_STATION
@@ -79,7 +68,7 @@ DROP TABLE "VEHICLE_TYPE";
 	"PROVIDER_ID" NUMBER(38,0), 
 	"COUNTRY_ID" NUMBER(38,0), 
 	"ADDRESS_ID" NUMBER(38,0), 
-	"STREET" VARCHAR2(32)
+	"STREET" VARCHAR2(32 BYTE)
    ) ;
 --------------------------------------------------------
 --  DDL for Table PRODUCER
@@ -87,7 +76,7 @@ DROP TABLE "VEHICLE_TYPE";
 
   CREATE TABLE "PRODUCER" 
    (	"PRODUCER_ID" NUMBER(38,0), 
-	"PRODUCER_NAME" VARCHAR2(32)
+	"PRODUCER_NAME" VARCHAR2(32 BYTE)
    ) ;
 --------------------------------------------------------
 --  DDL for Table PROVIDER
@@ -95,7 +84,7 @@ DROP TABLE "VEHICLE_TYPE";
 
   CREATE TABLE "PROVIDER" 
    (	"PROVIDER_ID" NUMBER(38,0), 
-	"PROVIDER_NAME" VARCHAR2(32)
+	"PROVIDER_NAME" VARCHAR2(32 BYTE)
    ) ;
 --------------------------------------------------------
 --  DDL for Table RECEIPT
@@ -123,7 +112,7 @@ DROP TABLE "VEHICLE_TYPE";
    (	"VEHICLE_ID" NUMBER(38,0), 
 	"VEHICLE_TYPE_ID" NUMBER(38,0), 
 	"PRODUCER_ID" NUMBER(38,0), 
-	"VERSION" VARCHAR2(32), 
+	"VERSION" VARCHAR2(32 BYTE), 
 	"DEFAULT_GAS_ID" NUMBER(38,0), 
 	"PS" NUMBER(3,0), 
 	"BUILD_YEAR" DATE, 
@@ -137,7 +126,7 @@ DROP TABLE "VEHICLE_TYPE";
 
   CREATE TABLE "VEHICLE_TYPE" 
    (	"VEHICLE_TYPE_ID" NUMBER(38,0), 
-	"VEHICLE_TYPE_NAME" VARCHAR2(32)
+	"VEHICLE_TYPE_NAME" VARCHAR2(32 BYTE)
    ) ;
 REM INSERTING into ACCOUNT
 SET DEFINE OFF;
@@ -238,127 +227,128 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('1','PKW');
 Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('5','Quad');
 Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Traktor');
 --------------------------------------------------------
---  DDL for Index PROVIDER_UN
+--  DDL for Index IDX_GAS_UN
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "PROVIDER_UN" ON "PROVIDER" ("PROVIDER_NAME") 
+  CREATE UNIQUE INDEX "IDX_GAS_UN" ON "GAS" ("GAS_NAME") 
   ;
 --------------------------------------------------------
---  DDL for Index RECEIPT_IDX
+--  DDL for Index IDX_COUNTRY_UN
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "RECEIPT_IDX" ON "RECEIPT" ("RECEIPT_ID") 
+  CREATE UNIQUE INDEX "IDX_COUNTRY_UN" ON "COUNTRY" ("COUNTRY_NAME") 
   ;
 --------------------------------------------------------
---  DDL for Index COUNTRY_IDX
+--  DDL for Index IDX_PRODUCER_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "COUNTRY_IDX" ON "COUNTRY" ("COUNTRY_ID") 
+  CREATE UNIQUE INDEX "IDX_PRODUCER_PK" ON "PRODUCER" ("PRODUCER_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index COUNTRY_UN
+--  DDL for Index IDX_ACC_VEHIC_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "COUNTRY_UN" ON "COUNTRY" ("COUNTRY_NAME") 
+  CREATE UNIQUE INDEX "IDX_ACC_VEHIC_PK" ON "ACC_VEHIC" ("ACC_VEHIC_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index ACCOUNT_IDX
+--  DDL for Index IDX_GAS_STATION_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "ACCOUNT_IDX" ON "ACCOUNT" ("ACCOUNT_ID") 
+  CREATE UNIQUE INDEX "IDX_GAS_STATION_PK" ON "GAS_STATION" ("GAS_STATION_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index GAS_UN
+--  DDL for Index IDX_VEHICLE_TYPE_UN
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "GAS_UN" ON "GAS" ("GAS_NAME") 
+  CREATE UNIQUE INDEX "IDX_VEHICLE_TYPE_UN" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_NAME") 
   ;
 --------------------------------------------------------
---  DDL for Index PRODUCER_IDX
+--  DDL for Index IDX_VEHICLE_TYPE_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "PRODUCER_IDX" ON "PRODUCER" ("PRODUCER_ID") 
+  CREATE UNIQUE INDEX "IDX_VEHICLE_TYPE_PK" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index GAS_IDX
+--  DDL for Index IDX_RECEIPT_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "GAS_IDX" ON "GAS" ("GAS_ID") 
+  CREATE UNIQUE INDEX "IDX_RECEIPT_PK" ON "RECEIPT" ("RECEIPT_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index PROVIDER_IDX
+--  DDL for Index IDX_ACCOUNT_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "PROVIDER_IDX" ON "PROVIDER" ("PROVIDER_ID") 
+  CREATE UNIQUE INDEX "IDX_ACCOUNT_PK" ON "ACCOUNT" ("ACCOUNT_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index GAS_STATION_IDX
+--  DDL for Index IDX_PROVIDER_UN
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "GAS_STATION_IDX" ON "GAS_STATION" ("GAS_STATION_ID") 
+  CREATE UNIQUE INDEX "IDX_PROVIDER_UN" ON "PROVIDER" ("PROVIDER_NAME") 
   ;
 --------------------------------------------------------
---  DDL for Index ADDRESS_PK
+--  DDL for Index IDX_COUNTRY_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "ADDRESS_PK" ON "ADDRESS" ("ADDRESS_ID") 
+  CREATE UNIQUE INDEX "IDX_COUNTRY_PK" ON "COUNTRY" ("COUNTRY_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index VEHICLE_TYPE_IDX
+--  DDL for Index IDX_VEHICLE_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "VEHICLE_TYPE_IDX" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_ID") 
+  CREATE UNIQUE INDEX "IDX_VEHICLE_PK" ON "VEHICLE" ("VEHICLE_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index ACC_VEHIC_IDX
+--  DDL for Index IDX_PRODUCER_UN
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "ACC_VEHIC_IDX" ON "ACC_VEHIC" ("ACC_VEHIC_ID") 
+  CREATE UNIQUE INDEX "IDX_PRODUCER_UN" ON "PRODUCER" ("PRODUCER_NAME") 
   ;
 --------------------------------------------------------
---  DDL for Index VEHICLE_IDX
+--  DDL for Index IDX_ADDRESS_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "VEHICLE_IDX" ON "VEHICLE" ("VEHICLE_ID") 
+  CREATE UNIQUE INDEX "IDX_ADDRESS_PK" ON "ADDRESS" ("ADDRESS_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index ACCOUNT_UN
+--  DDL for Index IDX_PROVIDER_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "ACCOUNT_UN" ON "ACCOUNT" ("EMAIL") 
+  CREATE UNIQUE INDEX "IDX_PROVIDER_PK" ON "PROVIDER" ("PROVIDER_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index VEHICLE_TYPE_UN
+--  DDL for Index IDX_GAS_PK
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "VEHICLE_TYPE_UN" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_NAME") 
+  CREATE UNIQUE INDEX "IDX_GAS_PK" ON "GAS" ("GAS_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index PRODUCER_UN
+--  DDL for Index IDX_ACCOUNT_UN
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "PRODUCER_UN" ON "PRODUCER" ("PRODUCER_NAME") 
+  CREATE UNIQUE INDEX "IDX_ACCOUNT_UN" ON "ACCOUNT" ("EMAIL") 
   ;
 --------------------------------------------------------
 --  Constraints for Table PRODUCER
 --------------------------------------------------------
 
   ALTER TABLE "PRODUCER" ADD CONSTRAINT "PRODUCER_PK" PRIMARY KEY ("PRODUCER_ID")
-  USING INDEX (CREATE UNIQUE INDEX "PRODUCER_IDX" ON "PRODUCER" ("PRODUCER_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_PRODUCER_PK" ON "PRODUCER" ("PRODUCER_ID") 
   )  ENABLE;
   ALTER TABLE "PRODUCER" MODIFY ("PRODUCER_ID" NOT NULL ENABLE);
   ALTER TABLE "PRODUCER" MODIFY ("PRODUCER_NAME" NOT NULL ENABLE);
   ALTER TABLE "PRODUCER" ADD CONSTRAINT "PRODUCER_UN" UNIQUE ("PRODUCER_NAME")
-  USING INDEX  ENABLE;
+  USING INDEX (CREATE UNIQUE INDEX "IDX_PRODUCER_UN" ON "PRODUCER" ("PRODUCER_NAME") 
+  )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table ACCOUNT
 --------------------------------------------------------
 
   ALTER TABLE "ACCOUNT" ADD CONSTRAINT "ACCOUNT_UK" UNIQUE ("EMAIL")
-  USING INDEX (CREATE UNIQUE INDEX "ACCOUNT_UN" ON "ACCOUNT" ("EMAIL") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_ACCOUNT_UN" ON "ACCOUNT" ("EMAIL") 
   )  ENABLE;
   ALTER TABLE "ACCOUNT" ADD CONSTRAINT "ACCOUNT_PK" PRIMARY KEY ("ACCOUNT_ID")
-  USING INDEX (CREATE UNIQUE INDEX "ACCOUNT_IDX" ON "ACCOUNT" ("ACCOUNT_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_ACCOUNT_PK" ON "ACCOUNT" ("ACCOUNT_ID") 
   )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table VEHICLE
@@ -370,7 +360,7 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Trakto
   ALTER TABLE "VEHICLE" MODIFY ("C_DATE" NOT NULL ENABLE);
   ALTER TABLE "VEHICLE" MODIFY ("U_DATE" NOT NULL ENABLE);
   ALTER TABLE "VEHICLE" ADD CONSTRAINT "VEHICLE_PK" PRIMARY KEY ("VEHICLE_ID")
-  USING INDEX (CREATE UNIQUE INDEX "VEHICLE_IDX" ON "VEHICLE" ("VEHICLE_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_VEHICLE_PK" ON "VEHICLE" ("VEHICLE_ID") 
   )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table PROVIDER
@@ -379,27 +369,29 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Trakto
   ALTER TABLE "PROVIDER" MODIFY ("PROVIDER_ID" NOT NULL ENABLE);
   ALTER TABLE "PROVIDER" MODIFY ("PROVIDER_NAME" NOT NULL ENABLE);
   ALTER TABLE "PROVIDER" ADD CONSTRAINT "PROVIDER_UN" UNIQUE ("PROVIDER_NAME")
-  USING INDEX  ENABLE;
+  USING INDEX (CREATE UNIQUE INDEX "IDX_PROVIDER_UN" ON "PROVIDER" ("PROVIDER_NAME") 
+  )  ENABLE;
   ALTER TABLE "PROVIDER" ADD CONSTRAINT "PROVIDER_PK" PRIMARY KEY ("PROVIDER_ID")
-  USING INDEX (CREATE UNIQUE INDEX "PROVIDER_IDX" ON "PROVIDER" ("PROVIDER_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_PROVIDER_PK" ON "PROVIDER" ("PROVIDER_ID") 
   )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table COUNTRY
 --------------------------------------------------------
 
   ALTER TABLE "COUNTRY" ADD CONSTRAINT "COUNTRY_PK" PRIMARY KEY ("COUNTRY_ID")
-  USING INDEX (CREATE UNIQUE INDEX "COUNTRY_IDX" ON "COUNTRY" ("COUNTRY_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_COUNTRY_PK" ON "COUNTRY" ("COUNTRY_ID") 
   )  ENABLE;
   ALTER TABLE "COUNTRY" MODIFY ("COUNTRY_ID" NOT NULL ENABLE);
   ALTER TABLE "COUNTRY" MODIFY ("DUTY_AMOUNT" NOT NULL ENABLE);
   ALTER TABLE "COUNTRY" ADD CONSTRAINT "COUNTRY_UN" UNIQUE ("COUNTRY_NAME")
-  USING INDEX  ENABLE;
+  USING INDEX (CREATE UNIQUE INDEX "IDX_COUNTRY_UN" ON "COUNTRY" ("COUNTRY_NAME") 
+  )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table GAS_STATION
 --------------------------------------------------------
 
   ALTER TABLE "GAS_STATION" ADD CONSTRAINT "GAS_STATION_PK" PRIMARY KEY ("GAS_STATION_ID")
-  USING INDEX (CREATE UNIQUE INDEX "GAS_STATION_IDX" ON "GAS_STATION" ("GAS_STATION_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_GAS_STATION_PK" ON "GAS_STATION" ("GAS_STATION_ID") 
   )  ENABLE;
   ALTER TABLE "GAS_STATION" MODIFY ("GAS_STATION_ID" NOT NULL ENABLE);
   ALTER TABLE "GAS_STATION" MODIFY ("PROVIDER_ID" NOT NULL ENABLE);
@@ -411,18 +403,19 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Trakto
 --------------------------------------------------------
 
   ALTER TABLE "VEHICLE_TYPE" ADD CONSTRAINT "VEHICLE_TYPE_PK" PRIMARY KEY ("VEHICLE_TYPE_ID")
-  USING INDEX (CREATE UNIQUE INDEX "VEHICLE_TYPE_IDX" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_VEHICLE_TYPE_PK" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_ID") 
   )  ENABLE;
   ALTER TABLE "VEHICLE_TYPE" MODIFY ("VEHICLE_TYPE_ID" NOT NULL ENABLE);
   ALTER TABLE "VEHICLE_TYPE" MODIFY ("VEHICLE_TYPE_NAME" NOT NULL ENABLE);
   ALTER TABLE "VEHICLE_TYPE" ADD CONSTRAINT "VEHICLE_TYPE_UN" UNIQUE ("VEHICLE_TYPE_NAME")
-  USING INDEX  ENABLE;
+  USING INDEX (CREATE UNIQUE INDEX "IDX_VEHICLE_TYPE_UN" ON "VEHICLE_TYPE" ("VEHICLE_TYPE_NAME") 
+  )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table RECEIPT
 --------------------------------------------------------
 
   ALTER TABLE "RECEIPT" ADD CONSTRAINT "RECEIPT_PK" PRIMARY KEY ("RECEIPT_ID")
-  USING INDEX (CREATE UNIQUE INDEX "RECEIPT_IDX" ON "RECEIPT" ("RECEIPT_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_RECEIPT_PK" ON "RECEIPT" ("RECEIPT_ID") 
   )  ENABLE;
   ALTER TABLE "RECEIPT" MODIFY ("RECEIPT_ID" NOT NULL ENABLE);
   ALTER TABLE "RECEIPT" MODIFY ("ACCOUNT_ID" NOT NULL ENABLE);
@@ -442,7 +435,7 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Trakto
   ALTER TABLE "ACC_VEHIC" MODIFY ("D_DATE" NOT NULL ENABLE);
   ALTER TABLE "ACC_VEHIC" MODIFY ("C_DATE" NOT NULL ENABLE);
   ALTER TABLE "ACC_VEHIC" ADD CONSTRAINT "ACC_VEHIC_PK" PRIMARY KEY ("ACC_VEHIC_ID")
-  USING INDEX (CREATE UNIQUE INDEX "ACC_VEHIC_IDX" ON "ACC_VEHIC" ("ACC_VEHIC_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_ACC_VEHIC_PK" ON "ACC_VEHIC" ("ACC_VEHIC_ID") 
   )  ENABLE;
   ALTER TABLE "ACC_VEHIC" MODIFY ("ACC_VEHIC_ID" NOT NULL ENABLE);
   ALTER TABLE "ACC_VEHIC" MODIFY ("ACCOUNT_ID" NOT NULL ENABLE);
@@ -455,26 +448,20 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Trakto
   ALTER TABLE "ADDRESS" MODIFY ("PLZ" NOT NULL ENABLE);
   ALTER TABLE "ADDRESS" MODIFY ("CITY" NOT NULL ENABLE);
   ALTER TABLE "ADDRESS" ADD CONSTRAINT "ADDRESS_PK" PRIMARY KEY ("ADDRESS_ID")
-  USING INDEX  ENABLE;
+  USING INDEX (CREATE UNIQUE INDEX "IDX_ADDRESS_PK" ON "ADDRESS" ("ADDRESS_ID") 
+  )  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table GAS
 --------------------------------------------------------
 
   ALTER TABLE "GAS" ADD CONSTRAINT "GAS_PK" PRIMARY KEY ("GAS_ID")
-  USING INDEX (CREATE UNIQUE INDEX "GAS_IDX" ON "GAS" ("GAS_ID") 
+  USING INDEX (CREATE UNIQUE INDEX "IDX_GAS_PK" ON "GAS" ("GAS_ID") 
   )  ENABLE;
   ALTER TABLE "GAS" MODIFY ("GAS_ID" NOT NULL ENABLE);
   ALTER TABLE "GAS" MODIFY ("GAS_NAME" NOT NULL ENABLE);
   ALTER TABLE "GAS" ADD CONSTRAINT "GAS_UN" UNIQUE ("GAS_NAME")
-  USING INDEX  ENABLE;
---------------------------------------------------------
---  Ref Constraints for Table ACC_VEHIC
---------------------------------------------------------
-
-  ALTER TABLE "ACC_VEHIC" ADD CONSTRAINT "ACC_VEHIC_FK1" FOREIGN KEY ("ACCOUNT_ID")
-	  REFERENCES "ACCOUNT" ("ACCOUNT_ID") ON DELETE CASCADE ENABLE;
-  ALTER TABLE "ACC_VEHIC" ADD CONSTRAINT "ACC_VEHIC_FK2" FOREIGN KEY ("ACC_VEHIC_ID")
-	  REFERENCES "ACC_VEHIC" ("ACC_VEHIC_ID") ON DELETE CASCADE ENABLE;
+  USING INDEX (CREATE UNIQUE INDEX "IDX_GAS_UN" ON "GAS" ("GAS_NAME") 
+  )  ENABLE;
 --------------------------------------------------------
 --  Ref Constraints for Table GAS_STATION
 --------------------------------------------------------
@@ -483,6 +470,8 @@ Insert into VEHICLE_TYPE (VEHICLE_TYPE_ID,VEHICLE_TYPE_NAME) values ('3','Trakto
 	  REFERENCES "PROVIDER" ("PROVIDER_ID") ON DELETE CASCADE ENABLE;
   ALTER TABLE "GAS_STATION" ADD CONSTRAINT "GAS_STATION_FK2" FOREIGN KEY ("COUNTRY_ID")
 	  REFERENCES "COUNTRY" ("COUNTRY_ID") ON DELETE CASCADE ENABLE;
+  ALTER TABLE "GAS_STATION" ADD CONSTRAINT "GAS_STATION_FK3" FOREIGN KEY ("ADDRESS_ID")
+	  REFERENCES "ADDRESS" ("ADDRESS_ID") ON DELETE CASCADE ENABLE;
 --------------------------------------------------------
 --  Ref Constraints for Table RECEIPT
 --------------------------------------------------------
