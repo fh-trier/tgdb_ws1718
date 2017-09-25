@@ -52,10 +52,18 @@ Deine Lösung
 ```
 
 ### Aufgabe 6
-Lasse dir alle Benutzer (`SURNAME`, `FORNAME`) ausgeben, die ein Auto besitzen.
-Tipp: Schaue zuerst in die Tabelle `VEHICLE_TYPE`.
+Lasse dir alle vorhanden Fahrzeugklassen aus der Tabelle `VEHICLE_TYPE` ausgeben. Suche nun nach allen Benutzern (`SURNAME`, `FORNAME`), die ein Auto besitzen.
 
 #### Lösung
 ```sql
 Deine Lösung
 ```
+
+### Aufgabe 7
+Kombiniere aus Aufgabe 6 beide Abfrage zu einer Abfrage.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
