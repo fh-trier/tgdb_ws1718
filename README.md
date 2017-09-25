@@ -6,4 +6,4 @@ Eine Installationsanleitung für git ist in diesem repository [hinterlegt](https
 
 ## Aufgaben
 * [Übung 01](./uebung_01.md)
-
+* [Übung 02](./uebung_02.md)
