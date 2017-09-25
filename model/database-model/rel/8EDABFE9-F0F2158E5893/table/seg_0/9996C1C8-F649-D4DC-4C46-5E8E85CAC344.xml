@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9996C1C8-F649-D4DC-4C46-5E8E85CAC344" name="VEHICLE_TYPE">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>99EE6E84-1A90-E4E9-5477-EFB3837B6F23</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VEHICLE_TYPE_ID" id="C4944A69-0D82-152F-FFC2-AD941A7912A2">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>60897A5C-56B2-05E7-F54F-FECDB7241286</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEHICLE_TYPE_NAME" id="B2133E19-B055-24FB-18AC-189C21F788BD">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>8489BFD7-A812-F6BC-2468-70E319C5E7AC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2DD5B8BF-C8C3-E1AF-7E9C-9AD2177C33F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B06282A8-5230-8D1B-D6FE-D6B00CE91D82" name="VEHICLE_TYPE_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>BA21BC61-AB47-F015-4901-EE154163734D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4944A69-0D82-152F-FFC2-AD941A7912A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA116A51-D7C4-6A49-7397-C6A0D576CFBF" name="VEHICLE_TYPE_UN">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>0EE09E2D-E3A5-929A-4F7F-1397888C8327</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2133E19-B055-24FB-18AC-189C21F788BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5DB8C48-B420-5068-6E26-61D558BAB7B0" name="VEHICLE_TYPE_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>56A8A56F-C149-4A9B-5AC5-E99BF0B96BDB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4944A69-0D82-152F-FFC2-AD941A7912A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69D6DC90-5273-0C8D-457D-D52417C27F93" name="VEHICLE_TYPE_UN_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>D4B13F02-6605-764D-011C-8998C6AB0F1E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2133E19-B055-24FB-18AC-189C21F788BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

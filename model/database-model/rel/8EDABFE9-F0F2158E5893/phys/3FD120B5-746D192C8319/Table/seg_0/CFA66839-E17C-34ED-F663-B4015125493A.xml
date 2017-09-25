@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ADDRESS" directorySegmentName="seg_0" id="CFA66839-E17C-34ED-F663-B4015125493A">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CITY" id="227EFDD8-E4D6-57C0-98F4-0E447E27234A">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLZ" id="68DE1733-3E66-3161-FBF8-E02840D184F0">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS_ID" id="6CBE3542-AB69-9CAE-DC57-3B3220C0B20B">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ADDRESS_PK_IDX" id="FA0E7239-3222-E51B-94C8-B63233C8EE8A">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ADDRESS_PK" id="B4ACFE10-7202-BE02-F54B-B119781B111C">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;ADDRESS_PK_IDX&quot; ON &quot;ADDRESS&quot; (&quot;ADDRESS_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

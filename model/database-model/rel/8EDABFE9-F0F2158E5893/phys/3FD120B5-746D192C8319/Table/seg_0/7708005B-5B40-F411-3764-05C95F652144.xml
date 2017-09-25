@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="COUNTRY" directorySegmentName="seg_0" id="7708005B-5B40-F411-3764-05C95F652144">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DUTY_AMOUNT" id="03D47CBA-2978-D4FF-BB7A-54045F9297BD">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ID" id="2B4BA533-E9C1-9194-F3F9-03D1CB8D3AD1">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_NAME" id="CEA311CF-B077-2FC7-2078-B7A2E5AA4BBD">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="COUNTRY_PK_IDX" id="574A9ADD-1712-8830-9216-99E5655E82C9">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="COUNTRY_UN_IDX" id="A6FA0705-EC99-EADE-D61F-38939806FCCF">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COUNTRY_PK" id="D3FA0EDA-F974-7032-2208-F784AA9A1CB7">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;COUNTRY_PK_IDX&quot; ON &quot;COUNTRY&quot; (&quot;COUNTRY_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="COUNTRY_UN" id="04B178B1-3E2C-3BDB-DEB5-67E18B088431">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;COUNTRY_UN_IDX&quot; ON &quot;COUNTRY&quot; (&quot;COUNTRY_NAME&quot;)</createIndexStatement>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

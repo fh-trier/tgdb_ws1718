@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GAS_STATION" directorySegmentName="seg_0" id="21279B86-304C-D532-3EF4-5B9E73D3CE4F">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="STREET" id="18AEEE15-8328-D223-3C6D-62588D3BB023">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROVIDER_ID" id="61B73E1D-96D4-B33A-AB05-4A324A33E923">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS_ID" id="890DE76B-50C3-673F-88EC-FC21F5356C2A">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GAS_STATION_ID" id="AA02A5EA-2CC9-ED93-B069-104894A4ED61">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ID" id="D6F116A7-25D6-48AC-06C0-F578D5DD8396">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GAS_STATION_PK_IDX" id="3CBBE72A-A30E-06AF-5AA3-BBC259073D8E">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GAS_STATION_ADDRESS_FK" id="1C8FF603-403D-FDBD-6044-FFC27177678B">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GAS_STATION_COUNTRY_FK" id="653EEB8E-3198-87AA-2B78-672B3DF562A1">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GAS_STATION_PROVIDER_FK" id="6E6C51D4-280D-5726-A0D4-85846EDA247F">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GAS_STATION_PK" id="9035D280-75F5-7D61-A57A-64D938514CBC">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;GAS_STATION_PK_IDX&quot; ON &quot;GAS_STATION&quot; (&quot;GAS_STATION_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

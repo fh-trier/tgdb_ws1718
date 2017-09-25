@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="VEHICLE_TYPE" directorySegmentName="seg_0" id="9996C1C8-F649-D4DC-4C46-5E8E85CAC344">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VEHICLE_TYPE_NAME" id="B2133E19-B055-24FB-18AC-189C21F788BD">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VEHICLE_TYPE_ID" id="C4944A69-0D82-152F-FFC2-AD941A7912A2">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="VEHICLE_TYPE_UN_IDX" id="69D6DC90-5273-0C8D-457D-D52417C27F93">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="VEHICLE_TYPE_PK_IDX" id="C5DB8C48-B420-5068-6E26-61D558BAB7B0">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="VEHICLE_TYPE_PK" id="B06282A8-5230-8D1B-D6FE-D6B00CE91D82">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;VEHICLE_TYPE_PK_IDX&quot; ON &quot;VEHICLE_TYPE&quot; (&quot;VEHICLE_TYPE_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="VEHICLE_TYPE_UN" id="DA116A51-D7C4-6A49-7397-C6A0D576CFBF">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;VEHICLE_TYPE_UN_IDX&quot; ON &quot;VEHICLE_TYPE&quot; (&quot;VEHICLE_TYPE_NAME&quot;)</createIndexStatement>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

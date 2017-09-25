@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B02A8A17-5D45-A921-DFDC-78FA7E1650B5" containerWithKeyObject="B58263E4-4386-1942-4FBF-328C74A3ABC6" localFKIndex="7589C6A1-8EEC-3219-FB55-C09B85CB7AEF" name="RECEIPT_GAS_FK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>86A3B974-AF9D-501B-C02C-FD0AEEEB7C84</importedID>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>7F629294-1ECE-0A1F-C911-807915C8AC49</referredTableID>
+<keyObject>C7D3BC50-3224-44BB-C84E-08A964A89500</keyObject>
+<referredKeyID>C7D3BC50-3224-44BB-C84E-08A964A89500</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

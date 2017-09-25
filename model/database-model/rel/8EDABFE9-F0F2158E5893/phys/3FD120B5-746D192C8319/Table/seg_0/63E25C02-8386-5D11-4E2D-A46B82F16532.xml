@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACCOUNT" directorySegmentName="seg_0" id="63E25C02-8386-5D11-4E2D-A46B82F16532">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FORENAME" id="0F269ACC-9165-11C3-CBC6-2DD56A2E719F">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ID" id="56F64FAA-F817-342F-070E-53FA1E622BF1">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="U_DATE" id="670A7D2A-DF89-FAC2-4446-2CC42D727803">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="7BC46FCC-0F90-32AB-66DD-120A1A82DF3E">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SURNAME" id="EC33A450-F8E7-55B2-FD40-330915CB140D">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="C_DATE" id="F49D340E-0319-1689-2C17-AF1950139BCE">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ACCOUNT_UN_IDX" id="1BD6F4EC-C3B9-43FE-F84A-A10F8DB1A261">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ACCOUNT_PK_IDX" id="4F61A956-53A1-325E-44A6-EA9835AB4D6C">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACCOUNT_PK" id="122A0A19-B04F-3B67-FF91-E9209EE86CBB">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;ACCOUNT_PK_IDX&quot; ON &quot;ACCOUNT&quot; (&quot;ACCOUNT_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="ACCOUNT_UK" id="6843B255-DC13-1DAE-1438-0A3FEEA14781">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;ACCOUNT_UN_IDX&quot; ON &quot;ACCOUNT&quot; (&quot;EMAIL&quot;)</createIndexStatement>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

@@ -1,31 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Tutorium_Domains">
    <domains>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_2_0" id="2189D56B-8F86-27E5-0E1F-2BE1D59F60BA">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_0_0" id="2DBA9092-0AD5-AFB9-E9C5-830214F83B14">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
-         <ownerDesignName>database-model</ownerDesignName>
-         <avTSortOrder>0</avTSortOrder>
-         <dataTypePrecision>38</dataTypePrecision>
-         <dataTypeScale>2</dataTypeScale>
-         <dataTypeSize>0</dataTypeSize>
-         <fileName>Tutorium_Domains</fileName>
-         <logicalDatatype>LOGDT019</logicalDatatype>
-      </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_2_0" id="352EF9DD-608B-FE5D-AEFF-0733D56C63C4">
-         <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
-         <ownerDesignName>database-model</ownerDesignName>
-         <avTSortOrder>0</avTSortOrder>
-         <dataTypePrecision>3</dataTypePrecision>
-         <dataTypeScale>2</dataTypeScale>
-         <dataTypeSize>0</dataTypeSize>
-         <fileName>Tutorium_Domains</fileName>
-         <logicalDatatype>LOGDT019</logicalDatatype>
-      </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_0_0" id="65996917-AC31-8F9F-060A-670E886B4B6A">
-         <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
          <dataTypePrecision>5</dataTypePrecision>
@@ -34,9 +12,9 @@
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_32" id="6B6962DB-FC3E-EFC7-C75E-CB6982F4CB75">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_32" id="2DD5B8BF-C8C3-E1AF-7E9C-9AD2177C33F0">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
          <dataTypePrecision>0</dataTypePrecision>
@@ -45,31 +23,39 @@
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_7_2_0" id="6CB270BF-092E-CA24-3EFB-6A8FE14ABD14">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_2_0" id="4104E546-87E8-F90E-BE7B-8394D25D7722">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
-         <dataTypePrecision>7</dataTypePrecision>
+         <dataTypePrecision>3</dataTypePrecision>
          <dataTypeScale>2</dataTypeScale>
          <dataTypeSize>0</dataTypeSize>
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_0_0" id="8DED54F2-4AC4-353E-7C5C-A9720766D96D">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="70896337-5B9B-14A5-9575-B618349E6ADB">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
+         <ownerDesignName>database-model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Tutorium_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_2_0" id="7F5B9243-6A5E-2ABA-554F-95330C6B4A52">
+         <createdBy>markus</createdBy>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
          <dataTypePrecision>38</dataTypePrecision>
-         <dataTypeScale>0</dataTypeScale>
+         <dataTypeScale>2</dataTypeScale>
          <dataTypeSize>0</dataTypeSize>
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_16" id="94C8E0AD-F35B-0BE7-F199-82DB5E10A3E9">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_16" id="90C6CCB2-C87B-B85E-B85C-772AA79721A9">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
          <dataTypePrecision>0</dataTypePrecision>
@@ -78,9 +64,42 @@
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_1_0_0" id="B67512E7-447A-DC42-AB08-C0A9957DB1EC">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_0_0" id="A07F959D-BC74-7B2C-4869-FB885EE0DDB4">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
+         <ownerDesignName>database-model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>38</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>Tutorium_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_7_2_0" id="D3868AC2-6AE9-E942-E58A-F4B6BDDD718D">
+         <createdBy>markus</createdBy>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
+         <ownerDesignName>database-model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>7</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>Tutorium_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_3_0" id="DC94A973-70D3-8B97-995B-D4DBFEA8BF8F">
+         <createdBy>markus</createdBy>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
+         <ownerDesignName>database-model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>38</dataTypePrecision>
+         <dataTypeScale>3</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>Tutorium_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_1_0_0" id="EB0A6B7D-F686-2DF2-CAEB-B1D4DA921F29">
+         <createdBy>markus</createdBy>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
          <dataTypePrecision>1</dataTypePrecision>
@@ -89,32 +108,13 @@
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_0_0" id="BBBAC113-48AA-C8C2-64A7-869600364152">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_0_0" id="EB52641C-8B28-7C58-7B53-65BADBEC16FC">
          <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
+         <createdTime>2017-09-25 15:58:07 UTC</createdTime>
          <ownerDesignName>database-model</ownerDesignName>
          <avTSortOrder>0</avTSortOrder>
          <dataTypePrecision>3</dataTypePrecision>
          <dataTypeScale>0</dataTypeScale>
-         <dataTypeSize>0</dataTypeSize>
-         <fileName>Tutorium_Domains</fileName>
-         <logicalDatatype>LOGDT019</logicalDatatype>
-      </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="F1E1BD4C-5CC5-E582-82DF-2B47F2955480">
-         <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
-         <ownerDesignName>database-model</ownerDesignName>
-         <avTSortOrder>0</avTSortOrder>
-         <fileName>Tutorium_Domains</fileName>
-         <logicalDatatype>LOGDT007</logicalDatatype>
-      </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_3_0" id="F951C93F-BF64-5A14-0C20-85499F4AB6FB">
-         <createdBy>markus</createdBy>
-         <createdTime>2017-09-25 15:49:14 UTC</createdTime>
-         <ownerDesignName>database-model</ownerDesignName>
-         <avTSortOrder>0</avTSortOrder>
-         <dataTypePrecision>38</dataTypePrecision>
-         <dataTypeScale>3</dataTypeScale>
          <dataTypeSize>0</dataTypeSize>
          <fileName>Tutorium_Domains</fileName>
          <logicalDatatype>LOGDT019</logicalDatatype>
