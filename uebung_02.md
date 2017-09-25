@@ -78,3 +78,25 @@ Deine Lösung
 ### Aufgabe 9
 Erstelle für dich einen neuen Benutzer.
 > Achtung, nutze für die Spalten `C_DATE` und `U_DATE` vorerst die Syntax `SYSDATE` - [Dokumentation](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 10
+Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlage für die nächten Aufgabem.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 11
+Verknüpfe das aus Aufgabe 10 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 9 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
