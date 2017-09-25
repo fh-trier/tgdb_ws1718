@@ -75,4 +75,6 @@ Modifizierde die Aufgabe 7 so, dass nur der Benutzer mit der `ACCOUNT_ID` = `7` 
 Deine Lösung
 ```
 
-
+### Aufgabe 9
+Erstelle für dich einen neuen Benutzer.
+> Achtung, nutze für die Spalten `C_DATE` und `U_DATE` vorerst die Syntax `SYSDATE` - [Dokumentation](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
