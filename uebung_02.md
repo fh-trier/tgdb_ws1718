@@ -67,3 +67,12 @@ Kombiniere aus Aufgabe 6 beide Abfrage zu einer Abfrage.
 Deine Lösung
 ```
 
+### Aufgabe 8
+Modifizierde die Aufgabe 7 so, dass nur der Benutzer mit der `ACCOUNT_ID` = `7` angezeigt wird.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+
