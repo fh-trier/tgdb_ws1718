@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79CBD502-BD8D-36CE-4AC0-9004194184C9" name="VEHICLE">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>036C7E4B-481A-9233-B2BB-6097EF4D2CAA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VEHICLE_ID" id="970DA42D-423E-41F9-99FE-4E0A16138493">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>FAE80074-889E-5F5D-6EE0-06628CC1B3A3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8DED54F2-4AC4-353E-7C5C-A9720766D96D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEHICLE_TYPE_ID" id="07A53C5C-35D5-4CF9-CA89-CDCD46BB48C8">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>0AA1BC69-CC99-0F56-C665-4F11873D2C3C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8DED54F2-4AC4-353E-7C5C-A9720766D96D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE8D0EF2-41E8-5125-6A6E-53C343D46647" referredColumn="D33E46AA-1211-486F-1B43-52A51D135C18"/>
+</associations>
+</Column>
+<Column name="PRODUCER_ID" id="CF691EF1-DB27-63FC-E673-01DDDFFCB20B">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>E4EC047D-1EC0-3872-8667-5ACB07A44A6D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8DED54F2-4AC4-353E-7C5C-A9720766D96D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02DF2478-5065-116C-9774-90ABDD5D724D" referredColumn="526CD492-41C4-CFA1-4D28-2C791AE652A1"/>
+</associations>
+</Column>
+<Column name="VERSION" id="20C876FF-BE66-E393-FCC6-2939B7B57A5D">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>26097529-18AB-963B-7F4F-E2DCC246BEB3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6B6962DB-FC3E-EFC7-C75E-CB6982F4CB75</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFAULT_GAS_ID" id="3794A40C-3506-B988-0D4F-8C811D8D3433">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>A3634C72-9C21-4330-9EF7-B4F6161D1661</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8DED54F2-4AC4-353E-7C5C-A9720766D96D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F972F2B3-4B4A-7983-414C-52981A88D69C" referredColumn="1C64823F-613C-A2D8-F799-7201B5756556"/>
+</associations>
+</Column>
+<Column name="PS" id="253B974B-52CC-852C-B384-2CCA971007C7">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>6B8E249D-BBFC-75D3-25CB-4A88C596E169</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BBBAC113-48AA-C8C2-64A7-869600364152</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUILD_YEAR" id="E919F27B-D9DE-3479-B4AF-764957ABF5FA">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>7D731002-0E00-0F2B-90E8-00C5EBFAFFAF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F1E1BD4C-5CC5-E582-82DF-2B47F2955480</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOORS" id="4C18D93E-12C1-9773-F00E-2FF9A7CE2468">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>7B56D1E1-B7F2-C516-53F3-A971C0D87C9B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B67512E7-447A-DC42-AB08-C0A9957DB1EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_DATE" id="FC5CCD37-F5A8-4A94-988B-FC872BB0A9E9">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>1909DECD-B890-851A-0A8F-804E5BCBEA38</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F1E1BD4C-5CC5-E582-82DF-2B47F2955480</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="U_DATE" id="F3D0FA22-91E1-5663-C50E-CC05ACDFA135">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>3DD57870-9939-D2F9-275C-20E7FC58065D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>F1E1BD4C-5CC5-E582-82DF-2B47F2955480</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="811D505F-A63A-D633-46CD-028CC1445051" name="VEHICLE_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>6CDBB7EF-84E8-AB37-3066-18E8DBCF7493</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="970DA42D-423E-41F9-99FE-4E0A16138493"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E16DA9CB-2008-9F7D-EE61-587888E10F05" name="VEHICLE_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>57F846A1-48EF-756D-3312-0138A91B1F50</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="970DA42D-423E-41F9-99FE-4E0A16138493"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28DC6CB7-5BE0-D443-AE57-7B5A98DD6BB8" name="VEHICLE_GAS_STATION_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3794A40C-3506-B988-0D4F-8C811D8D3433"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94A7194B-A813-4B39-9D88-E744EDA8ABF8" name="VEHICLE_PRODUCER_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF691EF1-DB27-63FC-E673-01DDDFFCB20B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFE2F355-BF29-E310-F50C-7B5AE4A58C8D" name="VEHICLE_VEHICLE_TYPE_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07A53C5C-35D5-4CF9-CA89-CDCD46BB48C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

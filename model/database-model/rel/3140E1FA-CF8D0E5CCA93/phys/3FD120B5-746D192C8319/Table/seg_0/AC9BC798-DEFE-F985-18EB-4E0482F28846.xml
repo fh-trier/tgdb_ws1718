@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RECEIPT" directorySegmentName="seg_0" id="AC9BC798-DEFE-F985-18EB-4E0482F28846">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RECEIPT_ID" id="1DCB88D2-2435-6D76-820A-8E4E372B509F">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ID" id="3B5355B1-F39B-789D-E824-BB002E82CA10">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="C_DATE" id="467D3C8A-933A-863C-760C-B3F923231A4A">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KILOMETER" id="659D1370-36F0-E60B-929F-A8B95D47B17D">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RECEIPT_DATE" id="6B7703AD-4DC0-CB35-19B4-2622201B4126">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACC_VEHIC_ID" id="70D24E4C-6C9C-5CFF-A9A7-769955769102">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GAS_ID" id="7B2ED30D-AB5B-F75E-1952-D0AF7829373D">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DUTY_AMOUNT" id="8AC20DEA-8BAF-3E29-AF23-8079AFA14D7E">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GAS_STATION_ID" id="A5BC5CDC-31E9-25AA-46CA-6C05851B6850">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LITER" id="BF736DD6-CB53-8602-3DE3-479336A273D7">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="U_DATE" id="F1899DBD-C666-CE0D-FCE2-101CE9EA816F">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICE_L" id="F59A7608-A527-1908-8A33-6FED3E834A10">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="RECEIPT_PK_IDX" id="0FCB813D-D144-F30C-4852-396BEFA84D79">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RECEIPT_ACCOUNT_FK" id="7ECFE18F-214D-0959-379C-548077DF04A9">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RECEIPT_ACC_VEHIC_FK" id="D1426640-28C9-7586-613D-A42A1D5CAE34">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RECEIPT_GAS_FK" id="F76F0355-8D5B-D774-D2A4-BF37F2912241">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RECEIPT_PK" id="A5D53957-AC4A-329E-B30D-88FBF42E25D9">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;RECEIPT_PK_IDX&quot; ON &quot;RECEIPT&quot; (&quot;RECEIPT_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

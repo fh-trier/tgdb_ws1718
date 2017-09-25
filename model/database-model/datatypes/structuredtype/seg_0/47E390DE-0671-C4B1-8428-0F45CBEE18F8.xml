@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="SDO_GEOMETRY" directorySegmentName="seg_0" id="47E390DE-0671-C4B1-8428-0F45CBEE18F8">
 <createdBy>markus</createdBy>
-<createdTime>2017-09-15 10:55:22 UTC</createdTime>
+<createdTime>2017-09-25 15:48:51 UTC</createdTime>
 <ownerDesignName>database-model</ownerDesignName>
 <visible>false</visible>
 <predefined>true</predefined>

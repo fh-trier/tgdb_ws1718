@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACC_VEHIC" directorySegmentName="seg_0" id="82DFF605-F500-AEAB-854F-6DDB03B858D1">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VEHICLE_ID" id="08F7EB70-B71C-BD16-C369-8DD5D24FD893">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="D_DATE" id="2106EAE1-3368-00A8-BB9C-FDDD9A671EC7">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="C_DATE" id="28B8BC49-BCC1-5551-56AA-03F66EB8F088">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACC_VEHIC_ID" id="28D459ED-B00B-6D8A-3251-196A93A9CC30">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CHECKOUT" id="2C6DE5E5-FB48-D62F-C3F2-A3BC724196F8">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOLD_PRICE" id="2EE15439-ADF6-94E9-7177-DB1085EECF9E">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ID" id="533963EE-2678-CF24-A0A8-CC5BC7EAED39">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGISTRATION" id="6650AA35-094C-2E70-8B0E-2B15C3101380">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BUY_KILOMETER" id="931386CC-EFA8-96C1-D21E-14F09C561EE7">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BUY_PRICE" id="9DB53FE5-CD47-6B4D-D786-BC4DC7E2A28D">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOLD_KILOMETER" id="9DBEB627-B4E7-AE62-4777-854FD4B367CD">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALIAS" id="A17512BE-507F-73BF-06AB-02489DE3FFD5">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDENTICATOR" id="A3CAD80D-B172-3CA0-E988-E189E8132AE2">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFAULT_GAS_STATION" id="C224E44F-882E-C4C8-9959-C19EF0F8D1D6">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ACC_VEHIC_PK_IDX" id="7BB02919-C1FE-BEDB-E640-B7CF6505FA52">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ACC_VEHIC_VEHICLE_FK" id="047DCCE3-A120-1266-FB71-9D6DFFBB53D7">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ACC_VEHIC_ACCOUNT_FK" id="C02DBA64-CEF8-90D1-84A3-631137245641">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACC_VEHIC_PK" id="19A4E72F-35A7-3EB7-5EA6-D45EC6EB6FE9">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;ACC_VEHIC_PK_IDX&quot; ON &quot;ACC_VEHIC&quot; (&quot;ACC_VEHIC_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

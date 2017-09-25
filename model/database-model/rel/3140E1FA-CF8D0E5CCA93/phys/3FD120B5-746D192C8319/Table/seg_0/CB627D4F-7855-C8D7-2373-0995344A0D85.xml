@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUCER" directorySegmentName="seg_0" id="CB627D4F-7855-C8D7-2373-0995344A0D85">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRODUCER_ID" id="526CD492-41C4-CFA1-4D28-2C791AE652A1">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCER_NAME" id="7DA01ADD-58EC-08C6-ED3C-A7E0C7FF3FF9">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRODUCER_PK_IDX" id="033E88B7-EBAE-BA15-ED32-7C7984E1E8A3">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRODUCER_UN_IDX" id="D037619A-2F11-96E6-2F30-EE9BAF488C17">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCER_PK" id="B5679E6E-65F9-2A7A-AD78-B21594536F43">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;PRODUCER_PK_IDX&quot; ON &quot;PRODUCER&quot; (&quot;PRODUCER_ID&quot;)</createIndexStatement>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="PRODUCER_UN" id="1434F752-12FA-71B3-115A-7080076B9AB9">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY CREATE INDEX STATEMENT</usingIndex>
+<createIndexStatement>CREATE UNIQUE INDEX &quot;PRODUCER_UN_IDX&quot; ON &quot;PRODUCER&quot; (&quot;PRODUCER_NAME&quot;)</createIndexStatement>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

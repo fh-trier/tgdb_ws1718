@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="3140E1FA-67E1-0B6E-5299-CF8D0E5CCA93" mainViewID="76D456B3-D7F4-A1E6-B193-FDE7D89BE02C">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:48:51 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>Tutorium.sql</fileName>
+<pathName>/home/markus/workspace/github.com/volker-raschek/gdb_ws1718/sql</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

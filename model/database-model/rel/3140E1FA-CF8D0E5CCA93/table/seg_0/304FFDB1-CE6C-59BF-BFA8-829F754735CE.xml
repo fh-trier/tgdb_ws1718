@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="304FFDB1-CE6C-59BF-BFA8-829F754735CE" name="GAS">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>0C7363C0-D3AC-04D8-C3B5-D358C9CF50D9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GAS_ID" id="1214D60E-A17B-92D2-90ED-A1AD6DEB95CC">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>D8DFC5D7-DA2B-221D-F833-D7EFD1BF5A41</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8DED54F2-4AC4-353E-7C5C-A9720766D96D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_NAME" id="4E842B7A-F7AF-50F8-73B3-54CDE585F760">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>F77E7CA2-E51C-6AD1-CF9A-6C36E97BA9C0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6B6962DB-FC3E-EFC7-C75E-CB6982F4CB75</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="209A683D-16CD-09E6-7133-7DC85625E8B6" name="GAS_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>B213BF7D-B056-E727-FD2F-C3430F08C9F9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1214D60E-A17B-92D2-90ED-A1AD6DEB95CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92C4B0E6-9FBE-9D5C-9CD4-978B7498A248" name="GAS_UN">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>092BDF52-D4DA-6930-E00D-C9B5FDD1E593</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E842B7A-F7AF-50F8-73B3-54CDE585F760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2722299-B875-8D0F-B787-6B77E4EFD793" name="GAS_UN_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>FAE94B54-0A44-824C-0141-7F397355FD55</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E842B7A-F7AF-50F8-73B3-54CDE585F760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4703413-5169-6D13-5384-DE4AF5615F03" name="GAS_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:49:14 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>5302F00C-730D-7553-B77D-2ABCBD7C4FEB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1214D60E-A17B-92D2-90ED-A1AD6DEB95CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,8 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="database-model" id="106075ED-A0DF-B3FD-EFFE-619AC1094B29" version="3.5">
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="database-model" id="4503455A-CCA7-1197-637F-855584A5AC4E" version="3.5">
 <createdBy>markus</createdBy>
-<createdTime>2017-09-15 10:55:22 UTC</createdTime>
+<createdTime>2017-09-25 15:48:51 UTC</createdTime>
 <ownerDesignName>database-model</ownerDesignName>
 <capitalNames>false</capitalNames>
-<designId>106075ED-A0DF-B3FD-EFFE-619AC1094B29</designId>
+<designId>4503455A-CCA7-1197-637F-855584A5AC4E</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3E83D155-00FF-95C3-3CAC-703C08782D5B">
+<designStoragePath>/Tutorium</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>
