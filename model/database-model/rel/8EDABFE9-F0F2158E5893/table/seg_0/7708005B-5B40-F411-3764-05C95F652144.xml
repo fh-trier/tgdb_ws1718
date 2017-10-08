@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7708005B-5B40-F411-3764-05C95F652144" name="COUNTRY">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>BB2F0035-D044-226C-BB7F-EA32DB44F4BF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="2B4BA533-E9C1-9194-F3F9-03D1CB8D3AD1">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>9FEC70FC-AABF-C4A0-7542-7CF946302780</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="CEA311CF-B077-2FC7-2078-B7A2E5AA4BBD">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>3A76D041-7D34-B26B-43E2-7CD85F7124F7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2DD5B8BF-C8C3-E1AF-7E9C-9AD2177C33F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DUTY_AMOUNT" id="03D47CBA-2978-D4FF-BB7A-54045F9297BD">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>51CFF5E7-4995-95B2-B84E-9B227BD9B31C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4104E546-87E8-F90E-BE7B-8394D25D7722</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3FA0EDA-F974-7032-2208-F784AA9A1CB7" name="COUNTRY_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>C56D9C1D-8044-C38E-8AC0-C78A4284C77D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B4BA533-E9C1-9194-F3F9-03D1CB8D3AD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04B178B1-3E2C-3BDB-DEB5-67E18B088431" name="COUNTRY_UN">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>7673A061-528F-72EE-F0D8-3632D2BC2505</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA311CF-B077-2FC7-2078-B7A2E5AA4BBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="574A9ADD-1712-8830-9216-99E5655E82C9" name="COUNTRY_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>CDD010EC-75DA-663A-1C78-4A063A90949A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B4BA533-E9C1-9194-F3F9-03D1CB8D3AD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6FA0705-EC99-EADE-D61F-38939806FCCF" name="COUNTRY_UN_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>925C1DBA-E672-3EC7-1ADD-CF62D7AAB1B0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA311CF-B077-2FC7-2078-B7A2E5AA4BBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

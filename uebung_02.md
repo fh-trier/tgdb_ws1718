@@ -25,7 +25,7 @@ Was bedeuten die durchgezogenen Linien die zwischen einigen Tabellen abgebildet 
 > Deine schriftliche Antwort.
 
 ### Aufgabe 3
-Was bedeuten die gestrichelte Linie die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
+Was bedeutet die gestrichelte Linie die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
 
 #### Lösung
 > Deine schriftliche Antwort.
@@ -38,4 +38,65 @@ Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auc
 > Deine schriftliche Antwort.
 
 ### Aufgabe 4
-Was bedeutet der Buchstabe `P` und `F` neben den
+Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
+
+#### Lösung
+> Deine schriftliche Lösung.
+
+### Aufgabe 5
+Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 6
+Lasse dir alle vorhanden Fahrzeugklassen aus der Tabelle `VEHICLE_TYPE` ausgeben. Suche nun nach allen Benutzern (`SURNAME`, `FORNAME`), die ein Auto besitzen.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 7
+Kombiniere aus Aufgabe 6 beide Abfrage zu einer Abfrage.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 8
+Modifizierde die Aufgabe 7 so, dass nur der Benutzer mit der `ACCOUNT_ID` = `7` angezeigt wird.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 9
+Erstelle für dich einen neuen Benutzer.
+> Achtung, nutze für die Spalten `C_DATE` und `U_DATE` vorerst die Syntax `SYSDATE` - [Dokumentation](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 10
+Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlage für die nächten Aufgabem.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 11
+Verknüpfe das aus Aufgabe 10 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 9 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+

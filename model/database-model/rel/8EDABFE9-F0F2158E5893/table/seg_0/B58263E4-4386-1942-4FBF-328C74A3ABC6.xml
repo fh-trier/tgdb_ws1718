@@ -1,0 +1,224 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B58263E4-4386-1942-4FBF-328C74A3ABC6" name="RECEIPT">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>B860488B-65D3-2FE0-91E4-F8E7CB72930E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECEIPT_ID" id="C37D127C-58DE-E423-CFF4-94320BB6074F">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>A65846C5-AD66-E9C5-89A2-38CD2C4C6E40</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="C62BD896-86D2-2C1C-18C9-8274A78E380D">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>9E20D6E1-0D1C-15C5-B63A-FE214184B776</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3E6F5B2-AFFE-E8F7-65D0-2A084644B1B3" referredColumn="56F64FAA-F817-342F-070E-53FA1E622BF1"/>
+</associations>
+</Column>
+<Column name="ACC_VEHIC_ID" id="6BB1C847-2944-A22A-0E69-2F35DEE98146">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>1838E816-DCD0-52D2-03E6-527B7A1AD0A3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5C79737-E1AA-5B92-EA4D-AFB18489A1A7" referredColumn="C016B940-3B10-9746-2404-8496458E54F7"/>
+</associations>
+</Column>
+<Column name="DUTY_AMOUNT" id="1539F56E-3988-A4DF-FE6A-04D55C3924FE">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>669F08E3-7862-A264-8314-877B0A3C61E1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4104E546-87E8-F90E-BE7B-8394D25D7722</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_ID" id="6A395164-DC9D-59E7-EC72-E5E4F1B56C65">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>43CF1D09-420F-B7D0-65C7-19475D6966BD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B02A8A17-5D45-A921-DFDC-78FA7E1650B5" referredColumn="30964C92-7A64-2C3E-B7D0-ED3703A03B50"/>
+</associations>
+</Column>
+<Column name="GAS_STATION_ID" id="0D671066-FBE3-62A3-C943-F8C940A473C0">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>CC664C1F-5087-4600-2B84-69720A90C001</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_L" id="1CE26056-01A9-2D04-3969-140F05EF09BC">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>AB786882-52BB-B7B3-BF23-9165432B5BA1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4104E546-87E8-F90E-BE7B-8394D25D7722</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KILOMETER" id="A508EB6D-B774-DCE2-5307-DA0E2D780AEA">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>F732A7C1-0681-88C8-C968-02C1FE9F8ED7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D3868AC2-6AE9-E942-E58A-F4B6BDDD718D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LITER" id="CADD5237-EC2E-298D-C4FC-F3F4566FA515">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>90E2A454-B2E4-547E-6EA7-8D1EE6B6A2AB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D3868AC2-6AE9-E942-E58A-F4B6BDDD718D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECEIPT_DATE" id="670C9E50-92FD-2E15-6119-AEAA6C7B148A">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>29D380AD-73C4-4C83-094F-5C90B3B00B2D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>70896337-5B9B-14A5-9575-B618349E6ADB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="C_DATE" id="9C7E283C-FF3A-D298-40F6-E4F29A274B91">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>6F0DF74B-690D-72B3-6EC6-FBE339CF905A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>70896337-5B9B-14A5-9575-B618349E6ADB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="U_DATE" id="E8FD8531-C55C-D8F1-C1DE-749097F26C6D">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>F998FB25-86E2-9349-7A26-18A4EA0150DE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>70896337-5B9B-14A5-9575-B618349E6ADB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF2E40D4-8FD6-5542-C290-EBA70846D3ED" name="RECEIPT_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>0D3BFF6C-7869-677A-B90A-01FE71997037</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C37D127C-58DE-E423-CFF4-94320BB6074F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79E6A350-E6D4-954E-28F8-0F895CD9F605" name="RECEIPT_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>DC9A82FD-13E4-47FD-43BB-CCBDA8F1D89F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C37D127C-58DE-E423-CFF4-94320BB6074F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35CA3E31-570A-0DD9-BC73-A7915BAA8DEA" name="RECEIPT_ACCOUNT_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C62BD896-86D2-2C1C-18C9-8274A78E380D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD35B102-7308-3B71-4D4D-5CEA0FBC46F7" name="RECEIPT_ACC_VEHIC_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BB1C847-2944-A22A-0E69-2F35DEE98146"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7589C6A1-8EEC-3219-FB55-C09B85CB7AEF" name="RECEIPT_GAS_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A395164-DC9D-59E7-EC72-E5E4F1B56C65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
