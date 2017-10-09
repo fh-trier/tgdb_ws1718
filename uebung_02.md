@@ -1,7 +1,7 @@
 # Tutorium - Grundlagen Datenbanken - Blatt 2
 
 ## Vorbereitungen
-* Für dieses Aufgabenblatt wird die SQL-Dump-Datei `uebung02.sql` benötigt, die sich im Verzeichnis `sql` befindet.
+* Für dieses Aufgabenblatt wird die SQL-Dump-Datei `tutorium.sql` benötigt, die sich im Verzeichnis `sql` befindet.
 * Die SQL-Dump-Datei wird in SQL-Plus mittels `start <Dateipfad/zur/sql-dump-datei.sql>` in die Datenbank importiert.
 * Beispiele
   * Linux `start ~/Tutorium.sql`
