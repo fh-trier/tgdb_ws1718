@@ -126,3 +126,10 @@ Deine Lösung
 Deine Lösung
 ```
 
+### Aufgabe 15
+Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl dazu?
+
+#### Lösung
+```sql
+Deine Lösung
+```
