@@ -126,10 +126,3 @@ Deine Lösung
 Deine Lösung
 ```
 
-### Aufgabe 15
-Speichere alle Änderungen deiner öffenen Transaktion. Wie lautet dazu ser SQL-Befehl?
-
-#### Lösung
-```sql
-COMMIT;
-```
