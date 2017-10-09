@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8E98D07-A03A-9859-8A5C-8C6BE2EF89E8" name="PROVIDER">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>E263447F-E9FC-A1FC-A027-C3B49AC8E24D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROVIDER_ID" id="FCAD730C-36D3-6CDD-D954-6FF1AFD49DCF">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>060BE601-E126-EBA5-B352-63215FB7E297</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVIDER_NAME" id="512BDBF6-78F6-60FD-39D1-F1060B059CEF">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>CA73BF8C-D9DB-A6C4-B609-3E656FF2CBD7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2DD5B8BF-C8C3-E1AF-7E9C-9AD2177C33F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F13EE66-6182-9B10-1CE8-75E234BE3E16" name="PROVIDER_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>68B19CF8-626F-C0E0-9F7F-9AC149F14094</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCAD730C-36D3-6CDD-D954-6FF1AFD49DCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7314014-5BB7-4917-9A86-A37C12F20129" name="PROVIDER_UN">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>153D602B-6799-FDB3-B629-CCCBEBF019A0</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="512BDBF6-78F6-60FD-39D1-F1060B059CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3021CCA-E57B-A281-4D93-AB6A92DFAE7A" name="PROVIDER_UN_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>B4F2E9DD-6F8A-7F04-C782-D343DBE1263F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="512BDBF6-78F6-60FD-39D1-F1060B059CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38E66558-33AD-CC12-0D3A-FDAE96FEEF81" name="PROVIDER_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>1F3AA3E9-44CA-FA6E-E099-1743E50A5D4A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCAD730C-36D3-6CDD-D954-6FF1AFD49DCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

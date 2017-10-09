@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21279B86-304C-D532-3EF4-5B9E73D3CE4F" name="GAS_STATION">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>54DF302B-1D99-9BFC-8975-681F8D236DD4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GAS_STATION_ID" id="AA02A5EA-2CC9-ED93-B069-104894A4ED61">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>DB44CA26-0E3E-84CD-20AF-67A05231B6E4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVIDER_ID" id="61B73E1D-96D4-B33A-AB05-4A324A33E923">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>A74BB2CA-1062-3530-35D5-171042D8BE7B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB5E1C3B-9A40-A8E2-6048-436843123D13" referredColumn="FCAD730C-36D3-6CDD-D954-6FF1AFD49DCF"/>
+</associations>
+</Column>
+<Column name="COUNTRY_ID" id="D6F116A7-25D6-48AC-06C0-F578D5DD8396">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>64F834A2-41E4-C696-D63F-B2EE8773A349</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E56153D-4145-BF23-F620-CFDA9DA5D564" referredColumn="2B4BA533-E9C1-9194-F3F9-03D1CB8D3AD1"/>
+</associations>
+</Column>
+<Column name="ADDRESS_ID" id="890DE76B-50C3-673F-88EC-FC21F5356C2A">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>679997DF-8349-0A41-C153-A81BA5158360</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A07F959D-BC74-7B2C-4869-FB885EE0DDB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40B884CA-F666-E408-F041-F97348565470" referredColumn="6CBE3542-AB69-9CAE-DC57-3B3220C0B20B"/>
+</associations>
+</Column>
+<Column name="STREET" id="18AEEE15-8328-D223-3C6D-62588D3BB023">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>E203C11C-B757-6932-3876-C23D87FC65DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2DD5B8BF-C8C3-E1AF-7E9C-9AD2177C33F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9035D280-75F5-7D61-A57A-64D938514CBC" name="GAS_STATION_PK">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>703AFFB0-6DFE-F61F-F342-51E8C1BAA454</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA02A5EA-2CC9-ED93-B069-104894A4ED61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CBBE72A-A30E-06AF-5AA3-BBC259073D8E" name="GAS_STATION_PK_IDX">
+<sourceDDLFile>Tutorium.sql</sourceDDLFile>
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<importedID>04227307-489C-0517-7799-0AE8204AA579</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA02A5EA-2CC9-ED93-B069-104894A4ED61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C8FF603-403D-FDBD-6044-FFC27177678B" name="GAS_STATION_ADDRESS_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="890DE76B-50C3-673F-88EC-FC21F5356C2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="653EEB8E-3198-87AA-2B78-672B3DF562A1" name="GAS_STATION_COUNTRY_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6F116A7-25D6-48AC-06C0-F578D5DD8396"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E6C51D4-280D-5726-A0D4-85846EDA247F" name="GAS_STATION_PROVIDER_FK">
+<createdBy>markus</createdBy>
+<createdTime>2017-09-25 15:58:07 UTC</createdTime>
+<ownerDesignName>database-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61B73E1D-96D4-B33A-AB05-4A324A33E923"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
