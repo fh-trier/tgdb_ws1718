@@ -55,7 +55,7 @@ Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl
 
 #### Lösung
 ```sql
-Deine Lösung
+start tutorium.sql;
 ```
 
 ### Aufgabe 6
@@ -63,7 +63,7 @@ Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT * FROM ACCOUNT;
 ```
 
 ### Aufgabe 7
@@ -71,7 +71,7 @@ Modifiziere Aufgabe 6 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT ACCOUNT_ID FROM ACCOUNT;
 ```
 
 ### Aufgabe 8
@@ -79,7 +79,7 @@ Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT * FROM VEHICLE;
 ```
 
 ### Aufgabe 9
@@ -87,7 +87,9 @@ Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, d
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT DISTINCT a.*
+  FROM ACCOUNT a, ACC_VEHIC av
+  WHERE a.ACCOUNT_ID = av.ACCOUNT_ID;
 ```
 
 ### Aufgabe 10
@@ -95,7 +97,10 @@ Modifizierde die Aufgabe 9 so, dass nur die Person mit der `ACCOUNT_ID` = `7` an
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT DISTINCT a.*
+  FROM ACCOUNT a, ACC_VEHIC av
+  WHERE a.ACCOUNT_ID = av.ACCOUNT_ID;
+    AND a.ACCOUNT_ID = 7;
 ```
 
 ### Aufgabe 11
@@ -104,7 +109,15 @@ Erstelle für dich einen neuen Benutzer.
 
 #### Lösung
 ```sql
-Deine Lösung
+INSERT INTO ACCOUNT
+  VALUES (
+    (SELECT MAX(ACCOUNT_ID)+1 FROM ACCOUNT),
+    'Nico',
+    'Schmitz',
+    'schmin@hochschule-trier.de',
+    SYSDATE,
+    SYSDATE
+  );
 ```
 
 ### Aufgabe 12
@@ -112,7 +125,19 @@ Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlag
 
 #### Lösung
 ```sql
-Deine Lösung
+INSERT INTO VEHICLE
+  VALUES (
+    (SELECT MAX(VEHICLE_ID)+1 FROM VEHICLE),
+    5, -- Quad
+    2, -- BMW
+    'GG',
+    NULL,
+    150,
+    '25-AUG-15',
+    0,
+    SYSDATE,
+    SYSDATE
+  );
 ```
 
 ### Aufgabe 13
@@ -120,7 +145,25 @@ Verknüpfe das aus Aufgabe 12 erstellte neue Auto mit deinem neuen Benutzer aus 
 
 #### Lösung
 ```sql
-Deine Lösung
+INSERT INTO ACC_VEHIC
+  VALUES (
+    (SELECT MAX(ACC_VEHIC_ID)+1 FROM ACC_VEHIC),
+    10,
+    14,
+    'GT:A:666',
+    NULL,
+    10532,
+    105,
+    7452,
+    200,
+    '10-SEP-15',
+    '5-OCT-16',
+    NULL,
+    SYSDATE,
+    SYSDATE
+  );
+
+SELECT * FROM acc_vehic WHERE ACC_VEHIC_ID = 7;
 ```
 
 ### Aufgabe 14
@@ -128,7 +171,7 @@ Deine Lösung
 
 #### Lösung
 ```sql
-Deine Lösung
+UPDATE ACCOUNT SET SURNAME = 'Zimmermann' WHERE ACCOUNT_ID = 7;
 ```
 
 ### Aufgabe 15
@@ -136,5 +179,5 @@ Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl
 
 #### Lösung
 ```sql
-Deine Lösung
+COMMIT;
 ```
