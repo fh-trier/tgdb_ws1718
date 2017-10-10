@@ -112,8 +112,8 @@ Erstelle für dich einen neuen Benutzer.
 INSERT INTO ACCOUNT
   VALUES (
     (SELECT MAX(ACCOUNT_ID)+1 FROM ACCOUNT),
-    'Nico',
     'Schmitz',
+    'Nico',
     'schmin@hochschule-trier.de',
     SYSDATE,
     SYSDATE
