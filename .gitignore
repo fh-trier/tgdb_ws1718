@@ -12,3 +12,6 @@ out
 
 # vim tmp
 *.swp
+
+# MacBook
+**/.DS_Store
