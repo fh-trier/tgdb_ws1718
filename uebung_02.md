@@ -17,19 +17,23 @@ Schaue dir das Datenbankmodell an. Wofür steht hinter dem Datentyp `NUMBER` die
 Nehme dir die Oracle [Dokumentation](https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT012) zu Hilfe.
 
 #### Lösung
-Deine schritliche Antwort.
+Der Datentyp `NUMBER` repräsentiert eine (Gleitkomma-)Zahl. In Klammern kann optional die Anzahl der Stellen vor und hinter dem Dezimalkomma angegeben werden.
+Beispiele:
+- `NUMBER` &rarr; eine Zahl mit bis zu 38 Stellen im Bereich von -10<sup>125</sup> bis +10<sup>125</sup>
+- `NUMBER(5)` &rarr; eine Zahl mit bis zu fünf Stellen vor dem Komma und ohne Nachkommastellen, z.B. `27538`
+- `NUMBER(3,5)` &rarr; eine Zahl mit bis zu drei Stellen vor dem Komma und fünf Nachkommastellen, z.B. `123,92553`
 
 ### Aufgabe 2
 Was bedeuten die durchgezogenen Linien, die zwischen einigen Tabellen abgebildet sind?
 
 #### Lösung
-Deine schriftliche Antwort.
+Die durchgezogenen Linien stehen für die Verbindungen zwischen Primär- und Fremdschlüsseln, wobei die Fremdschlüssel mit der Bedingung `NOT NULL` angelegt wurden. Die Verbindungen von den Fremdschlüsseln zu den Primärschlüsseln sind daher immer vorhanden.
 
 ### Aufgabe 3
 Was bedeutet die gestrichelte Linie, die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
 
 #### Lösung
-Deine schriftliche Antwort.
+Die Spalte `DEFAULT_GAS_STATION` hat nicht die Einschränkung `NOT NULL`. Dadurch kann die Spalte auch ungefüllt (`NULL`) sein. Die Verbindung von `ADD_VEHIC` zu `GAS_STATION` ist daher optional.
 
 ### Aufgabe 3
 Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auch `n` zu `m` Beziehung genannt. Beschreibe kurz die Bedeutung dieser Beziehung.
@@ -37,13 +41,14 @@ Nehme dir diesen [Artikel](https://glossar.hs-augsburg.de/Beziehungstypen) zu Hi
 
 ![n-to-m-relationship](./img/n-to-m-relationship.png)
 
-Deine schriftliche Antwort.
+In dem gezeigten Beispiel gibt es Personen. Jede der Personen kann unterschiedlich viele Hobbys haben. Es handelt sich um eine `n:m` Beziehung, d.h. beliebig viele Personen `n` können beliebig viele Hobbys `m` haben. Eine eindeutige Zuordnung von Person und Hobby ist hier nicht mehr gegeben, weil ein Hobby mehreren Personen zugeordnet und eine Person mehreren Hobbys zugeordnet sein kann. In relationalen Datenbanken wird das Problem über Zwischentabellen gelöst. In diesem Fall ist `PERSON_HOBBY` die Zwischentabelle. Die beiden Fremdschlüssel `PERSON_ID` und `HOBBY_ID` sind über `1:n` Beziehungen jeweils zu den Primärschlüsseln verknüpft, wodurch eine eindeutige Zuordnung wieder möglich ist.
 
 ### Aufgabe 4
 Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
 
 #### Lösung
-Deine schriftliche Lösung.
+- `P` &rarr; Primary Key, d.h. Primärschlüssel
+- `F` &rarr; Foreign Key, d.h. Fremdschlüssel
 
 ### Aufgabe 5
 Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
