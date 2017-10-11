@@ -79,7 +79,10 @@ Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
 ```sql
-SELECT * FROM VEHICLE;
+SELECT COLUMN_NAME
+  FROM USER_TAB_COLUMNS
+  WHERE TABLE_NAME = 'VEHICLE'
+  ORDER BY COLUMN_ID;
 ```
 
 ### Aufgabe 9
