@@ -8,11 +8,14 @@ Lesen Sie sich den Wikipedia-Artikel [Normalisierung](https://de.wikipedia.org/w
 ### Lösung Aufgabe 1
 ## Normalisierung
 
-# 1 NF: Eine Relation ist inder 1 NF, wenn alle Attributwerte atomat (elementar, nicht weiter diferenzierbar) sind. Jedeweiter NF setzt vorangegangene NF´s voraus. => Sotierbar & Filterbar
+# 1 NF: 
+Eine Relation ist inder 1 NF, wenn alle Attributwerte atomat (elementar, nicht weiter diferenzierbar) sind. Jedeweiter NF setzt vorangegangene NF´s voraus. => Sotierbar & Filterbar
 
-# 2 NF: Zuordnungstabellen: Eine Relation ist in der 2 NF, wenn alle Nichtschlüsselattributwerte (NSA) vom gesamten Primärschlüssel abhännig sind. 
+# 2 NF: 
+Zuordnungstabellen: Eine Relation ist in der 2 NF, wenn alle Nichtschlüsselattributwerte (NSA) vom gesamten Primärschlüssel abhännig sind. 
 
-# 3 NF: Eine Relation ist ind er 3 NF, wenn alle NSA voneinder unabhänig sind. (Geburtsdatum & Alter ist ein Verstoß)
+# 3 NF: 
+Eine Relation ist ind er 3 NF, wenn alle NSA voneinder unabhänig sind. (Geburtsdatum & Alter ist ein Verstoß)
 
 =>
 1NF: Alle Attributwerte müssen atomar sein
