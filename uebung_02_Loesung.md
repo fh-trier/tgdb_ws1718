@@ -58,78 +58,83 @@ Oder durch start + Link
 Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 
 #### Lösung
-```SELECT * 
-FROM ACCOUNT;```
+SELECT * 
+FROM ACCOUNT;
 
 ### Aufgabe 8
 Modifiziere Aufgabe 7 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
 
 #### Lösung
-```SELECT ACCOUNT_ID 
-FROM ACCOUNT;```
+SELECT ACCOUNT_ID 
+FROM ACCOUNT;
 
 ### Aufgabe 9
 Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
-```DESC VEHICLE;```
+DESC VEHICLE;
 
 ### Aufgabe 10
 Kombiniere Aufgabe 8 und 9 so, dass nur Personen (`ACCOUNT`) angezeigt werden, die ein Auto (`VEHICLE`) besitzen.
 
 #### Lösung
-```SELECT DISTINCT ac.surname 
+SELECT DISTINCT ac.surname 
 FROM ACCOUNT ac
 INNER JOIN ACC_VEHIC ve 
-ON ac.ACCOUNT_ID = ve.ACCOUNT_ID;```
+ON ac.ACCOUNT_ID = ve.ACCOUNT_ID;
 
 ### Aufgabe 11
 Modifizierde die Aufgabe 10 so, dass nur die Person mit der `ACCOUNT_ID` = `7` angezeigt wird.
 
 #### Lösung
-```sql
-Deine Lösung
-```
+SELECT DISTINCT ac.surname 
+FROM ACCOUNT ac
+INNER JOIN ACC_VEHIC ve 
+ON ac.ACCOUNT_ID = 7;
+ 
+
 
 ### Aufgabe 12
 Erstelle für dich einen neuen Benutzer.
 > Achtung, nutze für die Spalten `C_DATE` und `U_DATE` vorerst die Syntax `SYSDATE` - [Dokumentation](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
 
 #### Lösung
-```SELECT DISTINCT ac.surname 
-FROM ACCOUNT ac
-INNER JOIN ACC_VEHIC ve 
-ON ac.ACCOUNT_ID = 7;```
+INSERT INTO ACCOUNT
+VALUES (
+  (SELECT MAX(ACCOUNT_ID)+1 FROM ACCOUNT),
+   'Tyler','Rose','tylerr@hochschule-trier.de',
+   SYSDATE,SYSDATE);
+
 
 ### Aufgabe 13
 Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlage für die nächten Aufgaben.
 
 #### Lösung
-```INSERT INTO ACCOUNT
+INSERT INTO VEHICLE
 VALUES (
-  (SELECT MAX(ACCOUNT_ID)+1 FROM ACCOUNT),
-   'Tyler','Rose','tylerr@hochschule-trier.de',
-   SYSDATE,SYSDATE);```
+  (SELECT MAX(VEHICLE_ID)+1 FROM VEHICLE),
+   1, 2, '3', NULL, 300,'15-SEP-17', 4, SYSDATE, SYSDATE);
+
+
 
 ### Aufgabe 14
 Verknüpfe das aus Aufgabe 13 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 11 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
 
 #### Lösung
-```INSERT INTO VEHICLE
-VALUES (
-  (SELECT MAX(VEHICLE_ID)+1 FROM VEHICLE),
-   1, 2, '3', NULL, 300,'15-SEP-17', 4, SYSDATE, SYSDATE);```
+INSERT INTO ACC_VEHIC
+  VALUES ((SELECT MAX(ACC_VEHIC_ID)+1 FROM ACC_VEHIC), 10, 14, 'Twingo', 'Renault', NULL, NULL, 10000, 20, NULL, '15-SEP-17',  NULL, SYSDATE, SYSDATE);
+
 
 ### Aufgabe 15
 Ändere den Vorname `SURNAME` des Datensatzes mit der ID `7` in der Tabelle `ACCOUNT` auf `Zimmermann`.
 
 #### Lösung
-```UPDATE ACCOUNT 
+UPDATE ACCOUNT 
 SET SURNAME = 'Zimmermann' 
-WHERE ACCOUNT_ID = 7;```
+WHERE ACCOUNT_ID = 7;
 
 ### Aufgabe 16
 Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl dazu?
 
 #### Lösung
-```COMMIT;```
+COMMIT;
