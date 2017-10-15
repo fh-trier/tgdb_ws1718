@@ -18,6 +18,7 @@ Eine Relation ist in der 3 NF, wenn alle NSA voneinander unabhängig sind. (Gebu
 1NF: Alle Attributwerte müssen atomar sein
 
 2NF: Alle NSA hängen vom gesamten Primärschlüssel ab
+
 3NF: Alle NSA sind voneinander unabhängig.
 
 
