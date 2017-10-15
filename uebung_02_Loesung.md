@@ -51,8 +51,8 @@ F = Fremdschlüssel
 Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
 
 #### Lösung
-```@C:\Users\User\workspace\github.com\RoseTyler\tgdb_ws1718\sql\tutorium.sql
-Oder durch start + Link```
+@C:\Users\User\workspace\github.com\RoseTyler\tgdb_ws1718\sql\tutorium.sql
+Oder durch start + Link
 
 ### Aufgabe 7
 Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
