@@ -18,3 +18,7 @@ out
 
 # generated pdf
 **/uebung_*.pdf
+
+# generated tex
+**/*.tex
+**/*.log
