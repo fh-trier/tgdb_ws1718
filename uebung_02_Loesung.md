@@ -17,27 +17,25 @@ Schaue dir das Datenbankmodell an. Wofür steht hinter dem Datentyp `NUMBER` die
 Nehme dir die Oracle [Dokumentation](https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT012) zu Hilfe.
 
 #### Lösung
-Die maximal zulässige Zeichenanzahl wird angegeben.
+nico
 
 ### Aufgabe 2
 Was bedeuten die durchgezogenen Linien, die zwischen einigen Tabellen abgebildet sind?
 
 #### Lösung
-Sie zeigen an welche Relationen zwischen den Tabellen sind. Beispielsweise 1:n-Beziehung.
-
+Sie bildet eine Beziehung zwischen zwei Tabellen ab. Sie müssen ausgefüllt werden, obligatorisch.
 ### Aufgabe 3
 Was bedeutet die gestrichelte Linie, die zwischen der Tabelle `ACC_VEHIC` und `GAS_STATION` abgebildet ist?
 
 #### Lösung
-Nur Werte aus dem Attribut DEFAULT_GAS_STATION können in der Tabelle GAS_STATION eingetragen werden.
-
+Sie beschreibt eine Beziehung zwischen zwei Tabellen, die optional ausgefüllt werden können.
 ### Aufgabe 4
 Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auch `n` zu `m` Beziehung genannt. Beschreibe kurz die Bedeutung dieser Beziehung.
 Nehme dir diesen [Artikel](https://glossar.hs-augsburg.de/Beziehungstypen) zu Hilfe.
 
 ![n-to-m-relationship](./img/n-to-m-relationship.png)
 
-Zur Realisierung einer n zu m-Beziehung wird eine zusätzliche Tabelle erstellt in der die Primärschlüssel beider Tabellen als Fremdschlüssel enthalten sind. Die zusätzliches Tabelle ist somit eine 1:n-Beziehung.
+Zur Realisierung einer n zu m-Beziehung wird eine zusätzliche Tabelle erstellt in der die Primärschlüssel beider Tabellen als Fremdschlüssel enthalten sind. Die zusätzliches Tabelle ist somit eine 1:n-Beziehung. Eine n zu m - Beziehung beschreibt, dass n Datensätze mit m Datensätze verknüpft werden können. In diesem Beiespiel haben n Personen m Hobby in der Tabelle Person_Hobby gespeichter werden.
 
 ### Aufgabe 5
 Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
@@ -52,12 +50,13 @@ Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl
 
 #### Lösung
 @C:\Users\User\workspace\github.com\RoseTyler\tgdb_ws1718\sql\tutorium.sql
-Oder durch start + Link
+Oder durch start + Dateipfad
 
 ### Aufgabe 7
 Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 
 #### Lösung
+COLUMN EMAIL FORMAT a16
 SELECT * 
 FROM ACCOUNT;
 
@@ -72,6 +71,8 @@ FROM ACCOUNT;
 Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
+SELECT * 
+FROM VEHICLE;
 DESC VEHICLE;
 
 ### Aufgabe 10
