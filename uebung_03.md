@@ -58,6 +58,7 @@ Erstelle eine INNER JOIN (optional `WHERE`) Abfrage um die Beziehung zwischen de
 Deine Lösung
 ```
 
+### Aufgabe 6
 
 
 

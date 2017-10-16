@@ -1,5 +1,6 @@
 #!/bin/bash
-# Author
+# Author: 	Markus Pesch
+# Descript:	setup git for db lesson
 
 # BASE
 WORKSPACE="${HOME}/workspace"
