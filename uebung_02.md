@@ -17,11 +17,11 @@ Schaue dir das Datenbankmodell an. Wofür steht hinter dem Datentyp `NUMBER` die
 Nehme dir die Oracle [Dokumentation](https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT012) zu Hilfe.
 
 #### Lösung
-Der Datentyp `NUMBER` repräsentiert eine (Gleitkomma-)Zahl. In Klammern kann optional die Anzahl der Stellen vor und hinter dem Dezimalkomma angegeben werden.
+Der Datentyp `NUMBER` repräsentiert eine (Gleitkomma-)Zahl. In Klammern kann optional die Anzahl der Stellen insgesamt und hinter dem Dezimalkomma angegeben werden.
 Beispiele:
 - `NUMBER` &rarr; eine Zahl mit bis zu 38 Stellen im Bereich von -10<sup>125</sup> bis +10<sup>125</sup>
-- `NUMBER(5)` &rarr; eine Zahl mit bis zu fünf Stellen vor dem Komma und ohne Nachkommastellen, z.B. `27538`
-- `NUMBER(3,5)` &rarr; eine Zahl mit bis zu drei Stellen vor dem Komma und fünf Nachkommastellen, z.B. `123,92553`
+- `NUMBER(5)` &rarr; eine Zahl mit bis zu fünf Stellen insgesamt und ohne Nachkommastellen, z.B. `27538`
+- `NUMBER(5,3)` &rarr; eine Zahl mit bis zu fünf Stellen insgesamt und drei Nachkommastellen, z.B. `12,925`
 
 ### Aufgabe 2
 Was bedeuten die durchgezogenen Linien, die zwischen einigen Tabellen abgebildet sind?
