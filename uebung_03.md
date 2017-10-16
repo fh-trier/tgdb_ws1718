@@ -52,10 +52,11 @@ Deine Lösung
 
 ### Aufgabe 5
 Erstelle eine INNER JOIN (optional `WHERE`) Abfrage um die Beziehung zwischen den Tabellen `ACCOUNT`, `VEHICLE`, `VEHICLE_TYPE`, `GAS` und `PRODUCER` aufzulösen und zeige die Spalten `FORNAME`, `SURNAME`, `VEHICLE_TYPE_NAME`, `PRODUCER_NAME` und `GAS_NAME` an. Richte SQL-Plus so ein, dass möglicht jeder Datensatz nur eine Zeile belegt.
-> COLUMN <SPALTENNAME> FORMAT a<Zeichenlänge>
-> COLUMN <SPALTENNAME> FORMAT <Zahlenlänge, pro Länge eine 9>
-> Beispiel für eine Spalte des Datentyps `VARCHAR2`: `COLUMN SURNAME FORMAT a16`
-> Beispiel für eine Spalte des Datentyps `NUMERIC`: `COLUMN SOLD_KILOMETER 9999`
+
+* COLUMN <SPALTENNAME> FORMAT a<Zeichenlänge>
+* COLUMN <SPALTENNAME> FORMAT <Zahlenlänge, pro Länge eine 9>
+* Beispiel für eine Spalte des Datentyps `VARCHAR2`: `COLUMN SURNAME FORMAT a16`
+* Beispiel für eine Spalte des Datentyps `NUMERIC`: `COLUMN SOLD_KILOMETER 9999`
 
 #### Lösung
 ```sql
