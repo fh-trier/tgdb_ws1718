@@ -64,13 +64,52 @@ Deine Lösung
 ```
 
 ### Aufgabe 6
+Welche Fahrzeuge sind keinem Benutzer zugewiesen?
 
+#### Lösung
+```sql
+Deine Lösung
+```
 
+### Aufgabe 7
+An welcher Tankstelle wurde noch nie getankt?
 
+#### Lösung
+```sql
+Deine Lösung
+```
 
+### Aufgabe 8
+Liste alle Benutzer mit Fahrzeug auf, die noch nie einen Beleg hinzugefügt haben.
 
+#### Lösung
+```sql
+Deine LÖsung
+```
 
+### Aufgabe 9
+Liste alle Benutzer auf, die mit einem Fahrzeug schonmal im Außland tanken waren.
 
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 10
+Wie viele Benutzer haben einen LKW registriert?
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 11
+Wie viele Benutzer haben einen PKW und einen LKW registriert?
+
+#### Lösung
+```sql
+Deine Lösung
+```
 
 
 
