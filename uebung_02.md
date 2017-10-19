@@ -31,7 +31,7 @@ Was bedeutet die gestrichelte Linie, die zwischen der Tabelle `ACC_VEHIC` und `G
 #### Lösung
 Deine schriftliche Antwort.
 
-### Aufgabe 3
+### Aufgabe 4
 Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auch `n` zu `m` Beziehung genannt. Beschreibe kurz die Bedeutung dieser Beziehung.
 Nehme dir diesen [Artikel](https://glossar.hs-augsburg.de/Beziehungstypen) zu Hilfe.
 
@@ -39,13 +39,13 @@ Nehme dir diesen [Artikel](https://glossar.hs-augsburg.de/Beziehungstypen) zu Hi
 
 Deine schriftliche Antwort.
 
-### Aufgabe 4
+### Aufgabe 5
 Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
 
 #### Lösung
 Deine schriftliche Lösung.
 
-### Aufgabe 5
+### Aufgabe 6
 Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
 
 #### Lösung
@@ -53,7 +53,7 @@ Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl
 Deine Lösung
 ```
 
-### Aufgabe 6
+### Aufgabe 7
 Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 
 #### Lösung
@@ -61,16 +61,8 @@ Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 Deine Lösung
 ```
 
-### Aufgabe 7
-Modifiziere Aufgabe 6 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
-
-#### Lösung
-```sql
-Deine Lösung
-```
-
 ### Aufgabe 8
-Gebe alle Spalten der Tabelle `VEHICLE` aus.
+Modifiziere Aufgabe 7 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
 
 #### Lösung
 ```sql
@@ -78,7 +70,7 @@ Deine Lösung
 ```
 
 ### Aufgabe 9
-Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, die ein Auto (`VEHICLE`) besitzen.
+Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
 ```sql
@@ -86,7 +78,7 @@ Deine Lösung
 ```
 
 ### Aufgabe 10
-Modifizierde die Aufgabe 9 so, dass nur die Person mit der `ACCOUNT_ID` = `7` angezeigt wird.
+Kombiniere Aufgabe 7 und 9 so, dass nur Personen (`ACCOUNT`) angezeigt werden, die ein Auto (`VEHICLE`) besitzen.
 
 #### Lösung
 ```sql
@@ -94,6 +86,14 @@ Deine Lösung
 ```
 
 ### Aufgabe 11
+Modifizierde die Aufgabe 10 so, dass nur die Person mit der `ACCOUNT_ID` = `7` angezeigt wird.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 12
 Erstelle für dich einen neuen Benutzer.
 > Achtung, nutze für die Spalten `C_DATE` und `U_DATE` vorerst die Syntax `SYSDATE` - [Dokumentation](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
 
@@ -102,7 +102,7 @@ Erstelle für dich einen neuen Benutzer.
 Deine Lösung
 ```
 
-### Aufgabe 12
+### Aufgabe 13
 Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlage für die nächten Aufgaben.
 
 #### Lösung
@@ -110,16 +110,8 @@ Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlag
 Deine Lösung
 ```
 
-### Aufgabe 13
-Verknüpfe das aus Aufgabe 12 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 11 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
-
-#### Lösung
-```sql
-Deine Lösung
-```
-
 ### Aufgabe 14
-Ändere den Vorname `SURNAME` des Datensatzes mit der ID `7` in der Tabelle `ACCOUNT` auf `Zimmermann`.
+Verknüpfe das aus Aufgabe 13 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 12 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
 
 #### Lösung
 ```sql
@@ -127,6 +119,14 @@ Deine Lösung
 ```
 
 ### Aufgabe 15
+Ändere den Vorname `SURNAME` des Datensatzes mit der ID `7` in der Tabelle `ACCOUNT` auf `Zimmermann`.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 16
 Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl dazu?
 
 #### Lösung

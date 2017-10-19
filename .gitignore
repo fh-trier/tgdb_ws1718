@@ -15,3 +15,10 @@ out
 
 # MacBook
 **/.DS_Store
+
+# generated pdf
+**/uebung_*.pdf
+
+# generated tex
+**/*.tex
+**/*.log
