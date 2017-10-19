@@ -64,7 +64,7 @@ Deine Lösung
 ```
 
 ### Aufgabe 6
-Welche Fahrzeuge wurden noch keinem Benutzer zugewiesen?
+Welche Fahrzeuge wurden noch keinem Benutzer zugewiesen? Gebe über das Fahrzeug Informationen über den Typ, den Hersteller, das Modell, Baujahr und den Kraftstoff aus.
 
 #### Lösung
 ```sql
@@ -80,7 +80,7 @@ Deine Lösung
 ```
 
 ### Aufgabe 8
-An welcher Tankstelle wurde noch nie getankt?
+An welcher Tankstelle wurde noch nie getankt? Gebe zu den Tankstellen die Informationen über den Standort der Tankstellen aus.
 
 #### Lösung
 ```sql
@@ -88,11 +88,11 @@ Deine Lösung
 ```
 
 ### Aufgabe 9
-Liste alle Benutzer mit Fahrzeug auf, die noch nie einen Beleg hinzugefügt haben.
+Liste alle Benutzer (Vorname und Nachname) mit Fahrzeug (Hersteller, Modell, Alias) auf, die noch nie einen Beleg hinzugefügt haben.
 
 #### Lösung
 ```sql
-Deine LÖsung
+Deine Lösung
 ```
 
 ### Aufgabe 10
