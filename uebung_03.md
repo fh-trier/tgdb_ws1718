@@ -119,6 +119,20 @@ Wie viele Benutzer haben einen PKW und einen LKW registriert?
 Deine Lösung
 ```
 
+### Aufgabe 13
+Führe den Patch `02_patch.sql`, der sich im Verzeichnis `sql` befindet, in deiner Datenbank aus. Wie lautet der Befehlt zum import?
 
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 14
+Aktualisiere den Steuersatz aller Belege auf den Steuersatz des Landes, indem die Kunden getankt haben.
+
+#### Lösung
+```sql
+Deine Lösung
+```
 
 
