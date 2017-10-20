@@ -120,7 +120,7 @@ Deine Lösung
 ```
 
 ### Aufgabe 13
-Importieren sie den Patch `02_patch.sql` in ihre Datenbank. Wie lautet der Befehlt zum import?
+Führe den Patch `02_patch.sql`, der sich im Verzeichnis `sql` befindet, in deiner Datenbank aus. Wie lautet der Befehlt zum import?
 
 #### Lösung
 ```sql
