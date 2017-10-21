@@ -35,7 +35,7 @@ Was bedeutet die gestrichelte Linie, die zwischen der Tabelle `ACC_VEHIC` und `G
 #### Lösung
 Die Spalte `DEFAULT_GAS_STATION` hat nicht die Einschränkung `NOT NULL`. Dadurch kann die Spalte auch ungefüllt (`NULL`) sein. Die Verbindung von `ADD_VEHIC` zu `GAS_STATION` ist daher optional.
 
-### Aufgabe 3
+### Aufgabe 4
 Die folgende Abbildung beschreibt eine Beziehung zwischen Tabellen. Sie wird auch `n` zu `m` Beziehung genannt. Beschreibe kurz die Bedeutung dieser Beziehung.
 Nehme dir diesen [Artikel](https://glossar.hs-augsburg.de/Beziehungstypen) zu Hilfe.
 
@@ -43,14 +43,14 @@ Nehme dir diesen [Artikel](https://glossar.hs-augsburg.de/Beziehungstypen) zu Hi
 
 In dem gezeigten Beispiel gibt es Personen. Jede der Personen kann unterschiedlich viele Hobbys haben. Es handelt sich um eine `n:m` Beziehung, d.h. beliebig viele Personen `n` können beliebig viele Hobbys `m` haben. Eine eindeutige Zuordnung von Person und Hobby ist hier nicht mehr gegeben, weil ein Hobby mehreren Personen zugeordnet und eine Person mehreren Hobbys zugeordnet sein kann. In relationalen Datenbanken wird das Problem über Zwischentabellen gelöst. In diesem Fall ist `PERSON_HOBBY` die Zwischentabelle. Die beiden Fremdschlüssel `PERSON_ID` und `HOBBY_ID` sind über `1:n` Beziehungen jeweils zu den Primärschlüsseln verknüpft, wodurch eine eindeutige Zuordnung wieder möglich ist.
 
-### Aufgabe 4
+### Aufgabe 5
 Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
 
 #### Lösung
 - `P` &rarr; Primary Key, d.h. Primärschlüssel
 - `F` &rarr; Foreign Key, d.h. Fremdschlüssel
 
-### Aufgabe 5
+### Aufgabe 6
 Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
 
 #### Lösung
@@ -58,7 +58,7 @@ Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl
 start tutorium.sql;
 ```
 
-### Aufgabe 6
+### Aufgabe 7
 Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 
 #### Lösung
@@ -66,15 +66,15 @@ Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 SELECT * FROM ACCOUNT;
 ```
 
-### Aufgabe 7
-Modifiziere Aufgabe 6 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
+### Aufgabe 8
+Modifiziere Aufgabe 7 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
 
 #### Lösung
 ```sql
 SELECT ACCOUNT_ID FROM ACCOUNT;
 ```
 
-### Aufgabe 8
+### Aufgabe 9
 Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
@@ -85,8 +85,8 @@ SELECT COLUMN_NAME
   ORDER BY COLUMN_ID;
 ```
 
-### Aufgabe 9
-Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, die ein Auto (`VEHICLE`) besitzen.
+### Aufgabe 10
+Kombiniere Aufgabe 7 und 9 so, dass nur Personen (`ACCOUNT`) angezeigt werden, die ein Auto (`VEHICLE`) besitzen.
 
 #### Lösung
 ```sql
@@ -95,8 +95,8 @@ SELECT DISTINCT a.*
   WHERE a.ACCOUNT_ID = av.ACCOUNT_ID;
 ```
 
-### Aufgabe 10
-Modifizierde die Aufgabe 9 so, dass nur die Person mit der `ACCOUNT_ID` = `7` angezeigt wird.
+### Aufgabe 11
+Modifizierde die Aufgabe 10 so, dass nur die Person mit der `ACCOUNT_ID` = `7` angezeigt wird.
 
 #### Lösung
 ```sql
@@ -106,7 +106,7 @@ SELECT DISTINCT a.*
     AND a.ACCOUNT_ID = 7;
 ```
 
-### Aufgabe 11
+### Aufgabe 12
 Erstelle für dich einen neuen Benutzer.
 > Achtung, nutze für die Spalten `C_DATE` und `U_DATE` vorerst die Syntax `SYSDATE` - [Dokumentation](https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions172.htm)
 
@@ -123,7 +123,7 @@ INSERT INTO ACCOUNT
   );
 ```
 
-### Aufgabe 12
+### Aufgabe 13
 Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlage für die nächten Aufgaben.
 
 #### Lösung
@@ -143,8 +143,8 @@ INSERT INTO VEHICLE
   );
 ```
 
-### Aufgabe 13
-Verknüpfe das aus Aufgabe 12 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 11 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
+### Aufgabe 14
+Verknüpfe das aus Aufgabe 13 erstellte neue Auto mit deinem neuen Benutzer aus Aufgabe 12 in der Tabelle `ACC_VEHIC` und erstelle den ersten Rechnungsbeleg.
 
 #### Lösung
 ```sql
@@ -169,7 +169,7 @@ INSERT INTO ACC_VEHIC
 SELECT * FROM acc_vehic WHERE ACC_VEHIC_ID = 7;
 ```
 
-### Aufgabe 14
+### Aufgabe 15
 Ändere den Vorname `SURNAME` des Datensatzes mit der ID `7` in der Tabelle `ACCOUNT` auf `Zimmermann`.
 
 #### Lösung
@@ -177,7 +177,7 @@ SELECT * FROM acc_vehic WHERE ACC_VEHIC_ID = 7;
 UPDATE ACCOUNT SET SURNAME = 'Zimmermann' WHERE ACCOUNT_ID = 7;
 ```
 
-### Aufgabe 15
+### Aufgabe 16
 Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl dazu?
 
 #### Lösung
