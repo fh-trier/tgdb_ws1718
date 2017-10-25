@@ -32,7 +32,7 @@ Deine Lösung
 Welche Kunden haben im Jahr 2017 mehr als den Durchschnitt getank?
 
 #### Lösung
-```
+```sql
 Deine Lösung
 ```
 
