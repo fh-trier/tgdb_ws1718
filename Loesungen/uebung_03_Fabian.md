@@ -187,7 +187,7 @@ Wie viele Benutzer haben einen LKW registriert?
 
 #### Lösung
 ```sql
-SELECT COUNT(a.Account_ID)
+SELECT COUNT(DISTINCT a.Account_ID)
 FROM account a 
 INNER JOIN vehicle v ON (v.vehicle_id IN (Select vehicle_id FROM acc_vehic) 
 					AND (v.vehicle_id IN (SELECT vehicle_type_id FROM vehicle_type WHERE vehicle_type_name = 'LKW')));
@@ -198,7 +198,7 @@ Wie viele Benutzer haben einen PKW und einen LKW registriert?
 
 #### Lösung
 ```sql
-SELECT COUNT(a.Account_ID)
+SELECT COUNT(DISTINCT a.Account_ID)
 FROM account a 
 INNER JOIN vehicle v ON (v.vehicle_id IN (Select vehicle_id FROM acc_vehic) 
 					AND (v.vehicle_id IN (SELECT vehicle_type_id FROM vehicle_type WHERE vehicle_type_name = 'LKW' OR vehicle_type_name = 'PKW')));
@@ -209,7 +209,7 @@ Führe den Patch `02_patch.sql`, der sich im Verzeichnis `sql` befindet, in dein
 
 #### Lösung
 ```sql
-start "...\02_patch.sql" (Jede menge Errors)
+start "...\02_patch.sql" 
 ```
 
 ### Aufgabe 14
