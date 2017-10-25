@@ -175,10 +175,10 @@ Insert into ADDRESS (ADDRESS_ID,PLZ,CITY) values ('11','54296','Trier');
 Insert into ADDRESS (ADDRESS_ID,PLZ,CITY) values ('12','54294','Trier');
 REM INSERTING into COUNTRY
 SET DEFINE OFF;
-Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('1','Deutschland','0,19');
-Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('2','Belgien','0,17');
-Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('3','Luxemburg','0,09');
-Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('4','Frankreich','0,21');
+Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('1','Deutschland',0.19);
+Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('2','Belgien',0.17);
+Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('3','Luxemburg',0.09);
+Insert into COUNTRY (COUNTRY_ID,COUNTRY_NAME,DUTY_AMOUNT) values ('4','Frankreich',0.21);
 REM INSERTING into GAS
 SET DEFINE OFF;
 Insert into GAS (GAS_ID,GAS_NAME) values ('3','Benzin 104');
