@@ -28,7 +28,7 @@ Als App Entwickler/in für Android und iOS möchtest du dich nicht darauf verlas
 Deine Lösung
 ```
 
-### Aufgabe 3
+### Aufgabe 3 - Für Enthusiasten
 Welche Kunden haben im Jahr 2017 mehr als den Durchschnitt getank?
 
 #### Lösung
