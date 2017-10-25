@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  Datei erstellt -Freitag-Oktober-20-2017   
+--  Datei erstellt -Freitag-Oktober-20-2017
 --------------------------------------------------------
 SET DEFINE OFF;
 Insert into RECEIPT (RECEIPT_ID,ACCOUNT_ID,ACC_VEHIC_ID,DUTY_AMOUNT,GAS_ID,GAS_STATION_ID,PRICE_L,KILOMETER,LITER,RECEIPT_DATE,C_DATE,U_DATE) values ('1','1','1','0.18','1','1','1.15','472','49.7',to_date('20.10.17','DD.MM.RR'),to_date('20.10.17','DD.MM.RR'),to_date('20.10.17','DD.MM.RR'));
