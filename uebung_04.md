@@ -28,7 +28,7 @@ Als App Entwickler/in für Android und iOS möchtest du dich nicht darauf verlas
 Deine Lösung
 ```
 
-### Aufgabe 3 - Für Enthusiasten
+### Aufgabe 3
 Welche Kunden haben im Jahr 2017 mehr als den Durchschnitt getank?
 
 #### Lösung
@@ -71,7 +71,7 @@ Haben die Rollen Rechte an `SCOTT.EMP` oder `SCOTT.DEPT`?
 Deine Lösung
 ```
 
-### Aufgabe 5 - Für Enthusiasten
+### Aufgabe 5
 Es soll für jede Tankstelle der Umsatz einzelner Jahre aufgelistet werden auf Basis der Daten, die Benutzer durch ihre Quittungen eingegeben haben. Sortiere erst nach Jahr und anschließend nach der Tankstelle. Beispiel:
 
 | Jahr  | Anbieter  | Straße            | PLZ   | Stadt | Land          | Umsatz    |
