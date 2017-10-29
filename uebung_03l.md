@@ -123,7 +123,11 @@ An welcher Tankstelle wurde noch nie getankt? Gebe zu den Tankstellen die Inform
 #### Lösung
 ```sql
 Deine Lösung
-```
+`select r.gas_ID rg, r.price_L rp,r.Liter rl,gs.street
+  2  from receipt r
+  3  Inner JOIN acc_vehic av ON r.acc_vehic_id=av.acc_vehic_id
+  4  Inner Join gas_station gs ON av.Default_Gas_station=gs.Gas_station_ID
+  5  Where Liter <1;``
 
 ### Aufgabe 9
 Liste alle Benutzer (Vorname und Nachname) mit Fahrzeug (Hersteller, Modell, Alias) auf, die noch nie einen Beleg hinzugefügt haben.
@@ -131,7 +135,13 @@ Liste alle Benutzer (Vorname und Nachname) mit Fahrzeug (Hersteller, Modell, Ali
 #### Lösung
 ```sql
 Deine Lösung
-```
+`select a.surname as,a.forename af,p.producer_name pp,vt.vehicle_type_name vtv,av.alias ava
+  2  from account a
+  3  Inner JOIN acc_vehic av ON a.account_id=av.account_id
+  4  Inner JOIN vehicle v ON av.vehicle_id=v.vehicle_id
+  5  Inner JOIN vehicle_type vt ON v.vehicle_type_id=vt.vehicle_type_id
+  6  Inner JOIN producer p ON v.producer_ID=p.producer_ID
+  7  ;``
 
 ### Aufgabe 10
 Liste alle Benutzer auf, die mit einem Fahrzeug schonmal im Außland tanken waren.
@@ -139,7 +149,12 @@ Liste alle Benutzer auf, die mit einem Fahrzeug schonmal im Außland tanken ware
 #### Lösung
 ```sql
 Deine Lösung
-```
+`select a.surname, a.forename
+  2  from account a
+  3  INner JOIN acc_vehic av ON a.account_id=av.account_id
+  4  Inner Join gas_station gs ON av.default_gas_station=gs.gas_station_ID
+  5  Inner Join Country c ON gs.country_ID=c.country_ID
+  6  Where c.country_name NOT LIKe '%deut%';``
 
 ### Aufgabe 11
 Wie viele Benutzer haben einen LKW registriert?
@@ -147,7 +162,12 @@ Wie viele Benutzer haben einen LKW registriert?
 #### Lösung
 ```sql
 Deine Lösung
-```
+`select a.surname as,a.forename,av.identicator,v.vehicle_id
+  2  from account a
+  3  Inner Join acc_vehic av ON a.account_id=av.account_id
+  4  INner JOIN vehicle v ON av.vehicle_id=v.vehicle_id
+  5  Inner Join vehicle_type vt ON v.vehicle_type_id=vt.vehicle_type_ID
+  6  Where vt.vehicle_Type_Name LIKe 'LKW';``
 
 ### Aufgabe 12
 Wie viele Benutzer haben einen PKW und einen LKW registriert?
@@ -155,7 +175,12 @@ Wie viele Benutzer haben einen PKW und einen LKW registriert?
 #### Lösung
 ```sql
 Deine Lösung
-```
+`select a.surname as,a.forename,av.identicator,v.vehicle_id
+  2  from account a
+  3  Inner Join acc_vehic av ON a.account_id=av.account_id
+  4  INner JOIN vehicle v ON av.vehicle_id=v.vehicle_id
+  5  Inner Join vehicle_type vt ON v.vehicle_type_id=vt.vehicle_type_ID
+  6  Where vt.vehicle_Type_Name LIKe 'LKW' AND vt.vehicle_type_name LIKE 'PKW';``
 
 ### Aufgabe 13
 Führe den Patch `02_patch.sql`, der sich im Verzeichnis `sql` befindet, in deiner Datenbank aus. Wie lautet der Befehlt zum import?
@@ -163,7 +188,7 @@ Führe den Patch `02_patch.sql`, der sich im Verzeichnis `sql` befindet, in dein
 #### Lösung
 ```sql
 Deine Lösung
-```
+`start 02_patch.sql``
 
 ### Aufgabe 14
 Aktualisiere den Steuersatz aller Belege auf den Steuersatz des Landes, indem die Kunden getankt haben.
