@@ -22,7 +22,22 @@ Wie lautet deine SQL-Syntax um deine Erweiterung des Datenbankmodells zu impleme
 
 #### Lösung
 ```sql
-Deine Lösung
+-- Tabelle für Wohnsitz anlegen
+ CREATE TABLE RESIDENCE 
+ (
+   RESIDENCE_ID NUMBER(38) NOT NULL,
+   ADDRESS_ID NUMBER(38) NOT NULL,
+   STREET VARCHAR(32) NOT NULL,
+   CONSTRAINT PK_RESIDENCE PRIMARY KEY (RESIDENCE_ID),
+   CONSTRAINT FK_ADDRESS FOREIGN KEY (ADDRESS_ID) REFERENCES ADDRESS(ADDRESS_ID)
+ );
+ 
+-- Spalte für Erst- und Zweitwohnsitz hinzufügen
+ ALTER TABLE ACCOUNT
+   ADD (FIRST_RESIDENCE NUMBER(38),
+        SECOND_RESIDENCE NUMBER(38),
+        CONSTRAINT FK_FIRST_RESIDENCE FOREIGN KEY (FIRST_RESIDENCE) REFERENCES RESIDENCE(RESIDENCE_ID),
+        CONSTRAINT FK_SECOND_RESIDENCE FOREIGN KEY (SECOND_RESIDENCE) REFERENCES RESIDENCE(RESIDENCE_ID));
 ```
 
 ### Aufgabe 2
@@ -32,7 +47,9 @@ Wie lautet deine SQL-Syntax um das Datenbankmodell auf die zwei Attribute zu erw
 
 #### Lösung
 ```sql
-Deine Lösung
+ALTER TABLE GAS_STATION
+   ADD (GPS_POS_X NUMBER(10,5),
+        GPS_POS_Y NUMBER(10,5));
 ```
 
 ### Aufgabe 3 - Für Enthusiasten
@@ -52,7 +69,9 @@ Wurden die Tabellen-Rechte direkt an dich bzw. an `PUBLIC` vergeben?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT *
+FROM all_tab_privs
+WHERE table_schema = 'SCOTT';
 ```
 
 #### Aufgabe 4.2
@@ -60,7 +79,8 @@ Welche Rollen besitzt du direkt?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT * 
+FROM user_role_privs;
 ```
 
 #### Aufgabe 4.3
@@ -68,7 +88,9 @@ Welche Rollen haben die Rollen?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT *
+FROM role_role_privs 
+WHERE granted_role = 'FH_TRIER';
 ```
 
 #### Aufgabe 4.4
@@ -76,7 +98,10 @@ Haben die Rollen Rechte an `SCOTT.EMP` oder `SCOTT.DEPT`?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT role_role_privs 
+FROM dict??? 
+WHERE role_role_privs??? LIKE '%SCOTT%'; 
+
 ```
 
 ### Aufgabe 5 - Für Enthusiasten
