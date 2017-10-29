@@ -135,7 +135,9 @@ Deine Lösung
 #### Lösung
 ```sql
 Deine Lösung
-```
+Update account
+    Set surname='Zimmermann'
+    Where account_ID=7;
 
 ### Aufgabe 16
 Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl dazu?
@@ -143,4 +145,4 @@ Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl
 #### Lösung
 ```sql
 Deine Lösung
-```
+commit;
