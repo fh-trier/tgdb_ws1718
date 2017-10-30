@@ -17,3 +17,11 @@ Erstelle mit Dia oder einem anderen Werkzeug eine Abbilung der Mengen, die durch
 
 #### Lösung
 > Deine Lösung
+
+### Aufgabe 2
+Welche Personen haben kein Fahrzeug? Löse dies einmal mit `LEFT JOIN` und `RIGHT JOIN`.
+
+#### Lösung
+```sql
+Deine Lösung
+```
