@@ -95,12 +95,13 @@ Richte SQL-Plus so ein, dass möglicht jeder Datensatz nur eine Zeile belegt.
 
 #### Lösung
 ```sql
-SELECT DISTINCT acc.forename, acc.surname, vt.vehicle_type_name, v.version, v.build_year, p.producer_name, g.gas_name
+SELECT acc.forename, acc.surname, vt.vehicle_type_name, v.version, v.build_year, p.producer_name, g.gas_name
 FROM vehicle v 
 INNER JOIN vehicle_type vt ON (v.vehicle_type_id=vt.vehicle_type_id)
 INNER JOIN producer p ON (v.producer_id=p.producer_id)
 INNER JOIN gas g ON (v.default_gas_id=g.gas_id)
-INNER JOIN account acc ON (v.vehicle_id IN (SELECT vehicle_id FROM acc_vehic));
+INNER JOIN ACC_VEHIC av ON v.VEHICLE_ID = av.VEHICLE_ID
+INNER JOIN ACCOUNT acc ON acc.ACCOUNT_ID = av.ACCOUNT_ID;
 
 --Anpassung
 COLUMN forename FORMAT a10;
@@ -171,7 +172,8 @@ FROM vehicle v
 INNER JOIN producer p ON (v.producer_id=p.producer_id)
 INNER JOIN acc_vehic av ON (v.vehicle_id=av.vehicle_id)
 INNER JOIN account a ON (a.account_id=av.account_id)
-AND a.account_id NOT IN (SELECT account_id FROM receipt); 
+AND av.acc_vehic_id NOT IN (SELECT acc_vehic_id FROM receipt); 
+--WHERE av.acc_vehic_id NOT IN (SELECT acc_vehic_id FROM receipt); 
 ```
 
 ### Aufgabe 10
@@ -179,18 +181,26 @@ Liste alle Benutzer auf, die mit einem Fahrzeug schonmal im Außland tanken ware
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT a.FORENAME, a.SURNAME
+FROM ACCOUNT a
+INNER JOIN ACC_VEHIC av ON av.ACCOUNT_ID = a.ACCOUNT_ID
+INNER JOIN RECEIPT r ON r.ACCOUNT_ID = a.ACCOUNT_ID
+INNER JOIN GAS_STATION gs ON gs.GAS_STATION_ID = r.GAS_STATION_ID
+WHERE gs.COUNTRY_ID <> (SELECT COUNTRY_ID FROM COUNTRY 
+						WHERE COUNTRY_NAME = 'Deutschland');
 ```
 
 ### Aufgabe 11
 Wie viele Benutzer haben einen LKW registriert?
 
 #### Lösung
-```sql
-SELECT COUNT(DISTINCT a.Account_ID)
-FROM account a 
-INNER JOIN vehicle v ON (v.vehicle_id IN (Select vehicle_id FROM acc_vehic) 
-					AND (v.vehicle_id IN (SELECT vehicle_type_id FROM vehicle_type WHERE vehicle_type_name = 'LKW')));
+```sql					
+SELECT COUNT(DISTINCT a.ACCOUNT_ID)
+FROM ACCOUNT a
+INNER JOIN ACC_VEHIC av ON av.ACCOUNT_ID = a.ACCOUNT_ID
+INNER JOIN VEHICLE v ON v.VEHICLE_ID = av.VEHICLE_ID
+INNER JOIN VEHICLE_TYPE vt ON v.VEHICLE_TYPE_ID = vt.VEHICLE_TYPE_ID
+WHERE vt.VEHICLE_TYPE_NAME = 'LKW';
 ```
 
 ### Aufgabe 12
@@ -198,10 +208,22 @@ Wie viele Benutzer haben einen PKW und einen LKW registriert?
 
 #### Lösung
 ```sql
-SELECT COUNT(DISTINCT a.Account_ID)
-FROM account a 
-INNER JOIN vehicle v ON (v.vehicle_id IN (Select vehicle_id FROM acc_vehic) 
-					AND (v.vehicle_id IN (SELECT vehicle_type_id FROM vehicle_type WHERE vehicle_type_name = 'LKW' OR vehicle_type_name = 'PKW')));
+SELECT COUNT(DISTINCT a.ACCOUNT_ID)
+FROM ACCOUNT a
+WHERE a.ACCOUNT_ID IN (
+    SELECT av.ACCOUNT_ID
+      FROM ACC_VEHIC av
+        INNER JOIN VEHICLE v ON v.VEHICLE_ID = av.VEHICLE_ID
+        INNER JOIN VEHICLE_TYPE vt ON v.VEHICLE_TYPE_ID = vt.VEHICLE_TYPE_ID
+      WHERE vt.VEHICLE_TYPE_NAME = 'LKW'
+    )
+  AND a.ACCOUNT_ID IN (
+    SELECT av.ACCOUNT_ID
+      FROM ACC_VEHIC av
+        INNER JOIN VEHICLE v ON v.VEHICLE_ID = av.VEHICLE_ID
+        INNER JOIN VEHICLE_TYPE vt ON v.VEHICLE_TYPE_ID = vt.VEHICLE_TYPE_ID
+      WHERE vt.VEHICLE_TYPE_NAME = 'PKW'
+    );
 ```
 
 ### Aufgabe 13
@@ -217,7 +239,16 @@ Aktualisiere den Steuersatz aller Belege auf den Steuersatz des Landes, indem di
 
 #### Lösung
 ```sql
-Problem mit testen, siehe Aufgabe 13
+UPDATE RECEIPT r
+  SET DUTY_AMOUNT = (
+    SELECT c.DUTY_AMOUNT
+      FROM COUNTRY c
+      WHERE c.COUNTRY_ID = (
+        SELECT gs.COUNTRY_ID
+        FROM GAS_STATION gs
+        WHERE gs.GAS_STATION_ID = r.GAS_STATION_ID
+      )
+  );
 ```
 
 
