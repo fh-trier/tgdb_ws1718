@@ -243,6 +243,14 @@ UPDATE RECEIPT r
   SET DUTY_AMOUNT = (
     SELECT c.DUTY_AMOUNT
       FROM COUNTRY c
+	  INNER JOIN gas_station gs ON (c.country_id = gs.country_id)
+	  WHERE gs.gas_station_id = r.gas_station_id 
+  );
+  
+UPDATE RECEIPT r
+  SET DUTY_AMOUNT = (
+    SELECT c.DUTY_AMOUNT
+      FROM COUNTRY c
       WHERE c.COUNTRY_ID = (
         SELECT gs.COUNTRY_ID
         FROM GAS_STATION gs
