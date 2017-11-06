@@ -10,6 +10,9 @@
 ## Datenbankmodell
 ![Datenbankmodell](./img/datamodler_schema.png)
 
+## Data-Dictionary-Views
+![Data-Dictionary-Views](./img/contraint_schema.png)
+
 ## Aufgaben
 
 ### Aufgabe 1
