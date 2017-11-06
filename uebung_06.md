@@ -11,7 +11,7 @@
 ![Datenbankmodell](./img/datamodler_schema.png)
 
 ## Data-Dictionary-Views
-![Data-Dictionary-Views](./img/contraint_schema.png)
+![Data-Dictionary-Views](./img/constraint_schema.png)
 
 ## Aufgaben
 
