@@ -17,7 +17,18 @@ Um genauere Informationen und Prognosen mit Data Mining Werkzeugen zu schöpfen,
 
 #### Lösung
 ```sql
-Deine Lösung
+CREATE TABLE ACC_ADD (
+  ACC_ADD_ID  NUMBER(38) NOT NULL,
+  ACCOUNT_ID  NUMBER(38) NOT NULL,
+  STREET      VARCHAR2(32) NOT NULL,
+  ADDRESS_ID  NUMBER(38) NOT NULL,
+  COUNTRY_ID  NUMBER(38) NOT NULL
+);
+
+ALTER TABLE ACC_ADD ADD CONSTRAINT PK_ACC_ADD PRIMARY KEY (ACC_ADD_ID)
+ALTER TABLE ACC_ADD ADD CONSTRAINT UN_ACC_ADD UNIQUE (ACCOUNT_ID, STREET, ADDRESS_ID, COUNTRY_ID);
+ALTER TABLE ACC_ADD ADD CONSTRAINT FK_ACC_ADD_ACCOUNT_ID FOREIGN KEY (ACCOUNT_ID) REFERENCES ACCOUNT(ACCOUNT_ID);
+ALTER TABLE ACC_ADD ADD CONSTRAINT FK_ACC_ADD_ADDRESS_ID FOREIGN KEY (ADDRESS_ID) REFERENCES ADDRESS(ADDRESS_ID);
 ```
 
 ### Aufgabe 2
@@ -25,7 +36,11 @@ Als App Entwickler/in für Android und iOS möchtest du dich nicht darauf verlas
 
 #### Lösung
 ```sql
-Deine Lösung
+ALTER TABLE GAS_STATION
+ADD (
+  GEO_X   NUMBER(9,3),
+  GEO_Y   NUMBER(9,3)
+);
 ```
 
 ### Aufgabe 3
@@ -33,7 +48,24 @@ Welche Kunden haben im Jahr 2017 mehr als den Durchschnitt getank?
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT a.forename "Vorname", a.surname "Nachname",
+  (
+    SELECT AVG(price_l * liter * duty_amount)
+    FROM receipt
+    WHERE account_id = a.account_id
+    AND TO_CHAR(receipt_date, 'YYYY') = '2017'
+  ) "AVERAGE"
+FROM account a
+WHERE a.account_id IN (
+  SELECT account_id
+  FROM receipt k
+  GROUP BY account_id
+  HAVING AVG((price_l * liter)* duty_amount) > (
+    SELECT AVG((r.price_l * r.liter)* r.duty_amount)
+    FROM receipt r
+    WHERE TO_CHAR(receipt_date, 'YYYY') = '2017'
+  )
+);
 ```
 
 ### Aufgabe 4
@@ -44,7 +76,33 @@ Wurden die Tabellen-Rechte direkt an dich bzw. an `PUBLIC` vergeben?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT table_name, privilege, grantee
+FROM all_tab_privs
+WHERE table_name IN ('DEPT','EMP')
+AND table_schema LIKE 'SCOTT'
+AND grantee IN ('PESCHM', 'PUBLIC');
+
+-- Styling für sqlplus
+COLUMN SCHEMA FORMAT a15
+COLUMN Tabelle FORMAT a15
+COLUMN Recht FORMAT a15
+COLUMN GRANTEE FORMAT a15
+
+SELECT table_schema Schema, table_name Tabelle, privilege Recht, grantee
+FROM all_tab_privs
+WHERE table_name IN ('DEPT','EMP')
+AND table_schema LIKE 'SCOTT'
+AND grantee IN (
+  (
+    SELECT USER
+    FROM DUAL
+  ),
+  (
+    SELECT granted_role
+    FROM user_role_privs
+  ),
+  'PUBLIC'
+);
 ```
 
 #### Aufgabe 4.2
@@ -52,7 +110,8 @@ Welche Rollen besitzt du direkt?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT granted_role, default_role
+FROM user_role_privs;
 ```
 
 #### Aufgabe 4.3
@@ -60,7 +119,9 @@ Welche Rollen haben die Rollen?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT role , granted_role
+FROM role_role_privs
+WHERE role IN ('BW_STUDENT', 'FH_TRIER');
 ```
 
 #### Aufgabe 4.4
@@ -68,7 +129,11 @@ Haben die Rollen Rechte an `SCOTT.EMP` oder `SCOTT.DEPT`?
 
 ##### Lösung
 ```sql
-Deine Lösung
+SELECT *
+FROM role_tab_privs
+WHERE role IN ('BW_STUDENT','STUDENT','BASTUDENT','FH_TRIER')
+AND owner LIKE 'SCOTT'
+AND table_name IN ('EMP','DEPT');
 ```
 
 ### Aufgabe 5
@@ -83,7 +148,13 @@ Es soll für jede Tankstelle der Umsatz einzelner Jahre aufgelistet werden auf B
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT TO_CHAR(r.receipt_date, 'YYYY'), p.provider_name, gs.street, a.plz, a.city, c.country_name, CONCAT(ROUND(SUM(price_l * liter),2), ' €') AS "Umsatz"
+FROM receipt r
+  INNER JOIN gas_station gs ON (r.gas_station_id = gs.gas_station_id)
+  INNER JOIN country c ON (gs.country_id = c.country_id)
+  INNER JOIN address a ON (gs.address_id = a.address_id)
+  INNER JOIN provider p ON (gs.provider_id = p.provider_id)
+GROUP BY TO_CHAR(r.receipt_date, 'YYYY'), p.provider_name, gs.street, a.plz, a.city, c.country_name;
 ```
 
 
