@@ -61,3 +61,32 @@ Erstelle einen Check Contraint der überprüft, ob der Wert der Spalte `IDENTICA
 Deine Lösung
 ```
 
+### Aufgabe 6 - Wiederholung
+Liste für alle Personen einen Jahresverbrauch an Kraftstoff auf. Dabei ist interessant, wie viel Liter die einzelne Person pro Jahr getankt hat und wie viel Euro sie in dem Jahr an Kraftstoff ausgegeben hat.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 7 - Wiederholung
+Liste die Tankstellen absteigend sortiert nach der Kundenanzahl über alle Jahre.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 8 - Wiederholung
+Erweitere das Datenbankmodell um ein Fahrtenbuch, sowie es Unternehmen für ihren Fuhrpark führen. Dabei ist relevant, welche Person an welchem Tag ab wie viel Uhr ein Fahrzeug für die Reise belegt, wie viele Kilometer zurück gelegt wurden und wann die Person das Fahrzeug wieder abgibt.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+
+
+
+
+
