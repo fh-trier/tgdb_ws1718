@@ -62,7 +62,7 @@ Deine Lösung
 ```
 
 ### Aufgabe 6 - Wiederholung
-Liste für alle Personen einen Verbrauch an Kraftstoff auf. Dabei ist interessant, wie viel Liter die einzelne Person getankt hat und wie viel Euro sie an Kraftstoff ausgegeben hat.
+Liste für alle Personen den Verbrauch an Kraftstoff auf (Missachte hier die unterschiedlichen Kraftstoffe). Dabei ist interessant, wie viel Liter die einzelne Person getankt hat und wie viel Euro sie für Kraftstoffe ausgegeben hat.
 
 #### Lösung
 ```sql
