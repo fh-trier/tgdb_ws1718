@@ -1,4 +1,4 @@
-# Tutorium - Grundlagen Datenbanken - Blatt 2
+# Tutorium - Grundlagen Datenbanken - Blatt 7
 
 ## Vorbereitungen
 * Für dieses Aufgabenblatt wird die SQL-Dump-Datei `tutorium.sql` benötigt, die sich im Verzeichnis `sql` befindet.
