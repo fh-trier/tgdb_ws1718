@@ -1,25 +1,14 @@
-Tutorium - Grundlagen Datenbanken - Blatt 6
-===========================================
+# Tutorium - Grundlagen Datenbanken - Blatt 2
 
-Vorbereitungen
---------------
+## Vorbereitungen
+* Für dieses Aufgabenblatt wird die SQL-Dump-Datei `tutorium.sql` benötigt, die sich im Verzeichnis `sql` befindet.
+* Die SQL-Dump-Datei wird in SQL-Plus mittels `start <Dateipfad/zur/sql-dump-datei.sql>` in die Datenbank importiert.
+* Beispiele
+  * Linux `start ~/Tutorium.sql`
+  * Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
 
--   Für dieses Aufgabenblatt wird die SQL-Dump-Datei `01_tutorium.sql`
-    benötigt, die sich im Verzeichnis `sql` befindet.
--   Die SQL-Dump-Datei wird in SQL-Plus mittels
-    `start <Dateipfad/zur/sql-dump-datei.sql>` in die
-    Datenbank importiert.
--   Beispiele
--   Linux `start ~/Tutorium.sql`
--   Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
-
-Datenbankmodell
----------------
-
+## Datenbankmodell
 ![Datenbankmodell](./img/datamodler_schema.png)
-
-Aufgaben
---------
 
 ### Aufgabe 1
 
