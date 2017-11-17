@@ -13,7 +13,7 @@
 ### Aufgabe 1
 
 Analyse den untenstehenden anonymen PL/SQL-Codeblock. Was macht er?
-Passe den Codeblock so an, dass nicht nur die ID des Benutzers ausgegeben wird, sondern auch der Vor- und Nachname, als auch alle Fahrzeuge die der Benutzer sesitzt.
+Passe den Codeblock so an, dass nicht nur die ID des Benutzers ausgegeben wird, sondern auch der Vor- und Nachname, als auch die Anzahl seiner Fahrzeuge.
 
 ```sql
 DECLARE
