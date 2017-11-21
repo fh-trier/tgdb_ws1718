@@ -12,3 +12,4 @@ Eine Installationsanleitung für git ist in diesem repository [hinterlegt](https
 * [Übung 05](./uebung_05.md)
 * [Übung 06](./uebung_06.md)
 * [Übung 07](./uebung_07.md)
+* [Übung 08](./uebung_08.md)
