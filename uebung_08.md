@@ -19,17 +19,10 @@ Deine Lösung
 ```
 
 ### Aufgabe 2
-Erstelle eine Prozedur, die das erstellen von Quittungen ermöglicht. Berücksichte, dass die Funktion keine Primär- oder Fremdschlüssel-ID's als Parameter übergeben bekommt. Fange entsprechende übergebene Parameter auf `NULL` ab. Ergänze eventuell Parameter die `NULL` sind mit Informationen die sich durch Abfragen erklären lassen. Berücksichtige die Fehlerbehandlung!
+Erstelle eine Prozedur, die das erstellen von Quittungen ermöglicht.  Fange entsprechende übergebene Parameter auf `NULL` oder ` ` ab und gebe eine Meldung aus. Ergänze eventuell Parameter die `NULL` sind mit Informationen die sich durch Abfragen abrufen lassen. Berücksichtige die Fehlerbehandlung und mögliche Constraints die gebrochen werden könnten!
 
 #### Lösung
 ```sql
 Deine Lösung
 ```
 
-### Aufgabe 3
-Erstelle ein Prozedur, mit der man seine eigene Fahrzeuge in der Datenbank aktualisieren kann. Bspw. die Änderung von Fahrzeug informationen.
-
-#### Lösung
-```sql
-Deine Lösung
-```
