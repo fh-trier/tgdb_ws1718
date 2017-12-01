@@ -52,11 +52,29 @@ Verbessere den Trigger aus Aufgabe 2 so, dass
 + wenn versucht wird einen Datensätz mit `NULL` Werten zu füllen, die alten Wert für alle Spalten die als `NOT NULL` gekennzeichnet sind behalten bleiben.
 + das Passwort in MD5 gehasht wird. Beispielcode `select standard_hash('foo', 'MD5') from dual;`- [Referenz](https://stackoverflow.com/questions/22533037/how-to-call-oracle-md5-hash-function)
 + es nicht möglich ist, das `C_DATE` und `U_DATE` in der Zukunkt liegen
-+ U_DATE >= C_DATE sein muss
++ `U_DATE` >= `C_DATE` sein muss
 + der erste Buchstabe des Vor- und Nachnamens klein geschrieben ist
 + die Account-ID aus einer `SEQUENCE` entnommen wird
 
 Nutze die Lösung der Aufgabe 2, Aufgabenblatt 8 um die Aufgabe zu lösen. Dort solltest du einige Hilfestellungen finden.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 4
+Angenommen der Steuersatz in Deutschland sinkt von 19% auf 17%.
++ Aktualisiere den Steuersatz von Deutschland und
++ alle Quittungen die nach dem `01.10.2017` gespeichert wurden.
+
+#### Lösung
+```sql
+Deine Lösung
+```
+
+### Aufgabe 5
+Liste alle Hersteller auf, die LKW's produzieren und verknüpfe diese ggfl. mit den Eigentümern.
 
 #### Lösung
 ```sql
