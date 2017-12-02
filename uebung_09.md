@@ -56,9 +56,9 @@ Deine Lösung
 ### Aufgabe 4
 Verbessere den Trigger aus Aufgabe 2 so, dass
 + wenn versucht wird einen Datensatz mit `NULL` Werten zu füllen, die alten Wert für alle Spalten, die als `NOT NULL` gekennzeichnet sind, behalten bleiben.
-+ es nicht möglich ist, das `C_DATE` und `U_DATE` in der Zukunkt liegen
++ es nicht möglich ist, das die Werte für `C_DATE` und `U_DATE` in der Zukunkt liegen
 + `U_DATE` >= `C_DATE` sein muss
-+ der erste Buchstabe des Vor- und Nachnamens klein geschrieben ist
++ der erste Buchstabe jedes Wortes im Vor- und Nachnamen groß geschrieben wird
 + die Account-ID aus einer `SEQUENCE` entnommen wird
 
 Nutze die Lösung der Aufgabe 2, Aufgabenblatt 8 um die Aufgabe zu lösen. Dort solltest du einige Hilfestellungen finden.
