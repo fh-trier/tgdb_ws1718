@@ -17,6 +17,12 @@ Wo liegen die Vor- und Nachteile eines Trigger in Vergleich zu einer Prozedur?
 Deine Lösung
 
 ### Aufgabe 2
+Wo drin unterscheidet sich der `Row Level Trigger` von einem `Statement Trigger`?
+
+#### Lösung
+Deine Lösung
+
+### Aufgabe 3
 Schaue dir den folgenden PL/SQL-Code an. Was macht er?
 
 ```sql
@@ -47,7 +53,7 @@ END;
 #### Lösung
 Deine Lösung
 
-### Aufgabe 3
+### Aufgabe 4
 Verbessere den Trigger aus Aufgabe 2 so, dass
 + wenn versucht wird einen Datensätz mit `NULL` Werten zu füllen, die alten Wert für alle Spalten die als `NOT NULL` gekennzeichnet sind behalten bleiben.
 + es nicht möglich ist, das `C_DATE` und `U_DATE` in der Zukunkt liegen
@@ -62,7 +68,7 @@ Nutze die Lösung der Aufgabe 2, Aufgabenblatt 8 um die Aufgabe zu lösen. Dort 
 Deine Lösung
 ```
 
-### Aufgabe 4
+### Aufgabe 5
 Angenommen der Steuersatz in Deutschland sinkt von 19% auf 17%.
 + Aktualisiere den Steuersatz von Deutschland und
 + alle Quittungen die nach dem `01.10.2017` gespeichert wurden.
@@ -72,7 +78,7 @@ Angenommen der Steuersatz in Deutschland sinkt von 19% auf 17%.
 Deine Lösung
 ```
 
-### Aufgabe 5
+### Aufgabe 6
 Liste alle Hersteller auf, die LKW's produzieren und verknüpfe diese ggfl. mit den Eigentümern.
 
 #### Lösung
