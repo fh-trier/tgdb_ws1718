@@ -10,6 +10,8 @@
 ## Datenbankmodell
 ![Datenbankmodell](./img/datamodler_schema.png)
 
+## Aufgaben
+
 ### Aufgabe 1
 Was macht der folgende SQL-Code?
 
