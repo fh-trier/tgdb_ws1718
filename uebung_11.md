@@ -21,7 +21,7 @@ Hilfestellung:
 * First come, first serve. Exclusive Locks, die zuerst angefordert wurden, werden zuerst bearbeitet.
 * Am Ende der Transaktion (Commit/Rollback) werden alle Locks freigegeben
 * Fetch(A): Shared-Lock wird für den Datensatz A angefordert.
-*  Update(B): Exclusive-Lock wird für den Datensatz B angefordert.
+* Update(B): Exclusive-Lock wird für den Datensatz B angefordert.
 
 | Zeitpunkt | Transaktion | Operation |
 | --------- | ----------- | ----------|
@@ -56,6 +56,6 @@ Hilfestellung:
 | t28       | T5          | UPDATE(A) |
 | t29       | T4          | UPDATE(B) |
 | t30       | T6          | FETCH(A)  |
-| T31       | T7          | COMMIT    |
+| t31       | T7          | COMMIT    |
 
 
