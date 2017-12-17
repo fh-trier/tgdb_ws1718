@@ -10,6 +10,8 @@
 ## Datenbankmodell
 ![Datenbankmodell](./img/datamodler_schema.png)
 
+## Aufgaben
+
 ### Aufgabe 1
 Wo liegen die Vor- und Nachteile eines Trigger in Vergleich zu einer Prozedur?
 
