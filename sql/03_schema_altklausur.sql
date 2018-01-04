@@ -9,9 +9,9 @@
 --  DDL for Table BESTELL_POSITION
 --------------------------------------------------------
 CREATE TABLE "BESTELL_POSITION" (
-  "BESTELLNR" NUMBER(10,0),
-  "ARTIKELNR" NUMBER(10,0),
-  "MENGE" NUMBER(10,0),
+  "BESTELLNR" NUMBER(10,0) NOT NULL,
+  "ARTIKELNR" NUMBER(10,0) NOT NULL,
+  "MENGE" NUMBER(10,0) NOT NULL,
   "POSITIONSNUMMER" NUMBER(10,0)
 );
 
@@ -19,8 +19,9 @@ CREATE TABLE "BESTELL_POSITION" (
 --  DDL for Table KUNDE
 --------------------------------------------------------
 CREATE TABLE "KUNDE" (
-  "KUNDENNR" NUMBER(10,0),
-  "NAME" VARCHAR2(30)
+  "KUNDENNR" NUMBER(10,0) NOT NULL,
+  "NAME" VARCHAR2(30) NOT NULL,
+  CONSTRAINT "PK_KUNDE" PRIMARY KEY ("KUNDENNR")
 );
 
 INSERT INTO BESTELLUNG (BESTELLNR,KUNDENNR,BESTELLDATUM,LIEFERDATUM) VALUES ('893','4',to_date('08.03.11','DD.MM.RR'),null);
@@ -187,23 +188,5 @@ INSERT INTO KUNDE (KUNDENNR,NAME) VALUES ('2','Deutsche Bundebahn');
 INSERT INTO KUNDE (KUNDENNR,NAME) VALUES ('4','Grund- und Bodenanstalt');
 INSERT INTO KUNDE (KUNDENNR,NAME) VALUES ('3','Bayer Leverkusen');
 
---------------------------------------------------------
---  Constraints for Table BESTELLUNG
---------------------------------------------------------
-ALTER TABLE "BESTELLUNG" MODIFY ("BESTELLDATUM" NOT NULL ENABLE);
-ALTER TABLE "BESTELLUNG" MODIFY ("KUNDENNR" NOT NULL ENABLE);
-ALTER TABLE "BESTELLUNG" MODIFY ("BESTELLNR" NOT NULL ENABLE);
 
---------------------------------------------------------
---  Constraints for Table BESTELL_POSITION
---------------------------------------------------------
-ALTER TABLE "BESTELL_POSITION" MODIFY ("MENGE" NOT NULL ENABLE);
-ALTER TABLE "BESTELL_POSITION" MODIFY ("ARTIKELNR" NOT NULL ENABLE);
-ALTER TABLE "BESTELL_POSITION" MODIFY ("BESTELLNR" NOT NULL ENABLE);
 
---------------------------------------------------------
---  Constraints for Table KUNDE
---------------------------------------------------------
-ALTER TABLE "KUNDE" ADD CONSTRAINT "PK_KUNDE" PRIMARY KEY ("KUNDENNR") ENABLE;
-ALTER TABLE "KUNDE" MODIFY ("NAME" NOT NULL ENABLE);
-ALTER TABLE "KUNDE" MODIFY ("KUNDENNR" NOT NULL ENABLE);
