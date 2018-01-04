@@ -1,5 +1,8 @@
 # Tutorium - Grundlagen Datenbanken - Blatt 12
 
+## Vorbereitung
+Der [SQL-Dump](./sql/03_schema_altklausur.sql) des Datenbankmodells befindet sich im Verzeichnis `sql`.
+
 ## Datenbankmodell
 ![Databasemodell](./img/schema_alt_klausur.png)
 
