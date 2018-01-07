@@ -1,6 +1,0 @@
-[submodule "sqlplus_installation"]
-	path = sqlplus_installation
-	url = https://github.com/fh-trier/sqlplus_installation.git
-[submodule "git_installation"]
-	path = git_installation
-	url = https://github.com/fh-trier/git_installation.git
