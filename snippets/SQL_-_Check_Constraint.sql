@@ -6,12 +6,12 @@
 
 /* Allgemeine Syntax */
 ALTER TABLE <HAUPTTABELLE>
-ADD CONSTRAINT 	<BEZEICHNUNG>
-CHECK (<BEDINGUNG>);
+ADD CONSTRAINT <BEZEICHNUNG>
+  CHECK (<BEDINGUNG>);
 
 /* Beispiel */
 ALTER TABLE KDN_Artikel
-ADD CONSTRAINT c_med_rez
+ADD CONSTRAINT "c_med_rez"
 CHECK (
   (Medikament = 0 OR Medikament = 1) AND
   (Rezeptpflichtig = 0 OR Rezeptpflichtig = 1)
@@ -19,7 +19,7 @@ CHECK (
 
 /* Alternative */
 ALTER TABLE KDN_Artikel
-ADD CONSTRAINT c_med_rez2
+ADD CONSTRAINT "c_med_rez2"
 CHECK (
   Medikament IN (0,1) AND
   Rezeptpflichtig IN (0,1)
