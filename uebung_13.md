@@ -1,7 +1,11 @@
 # Tutorium - Grundlagen Datenbanken - Blatt 13
 
-## Vorbereitung
-Der [SQL-Dump](./sql/04_schema_altklausur.sql) des Datenbankmodells befindet sich im Verzeichnis `sql`.
+## Vorbereitungen
+* Für dieses Aufgabenblatt wird die SQL-Dump-Datei `schema_uebung_13.sql` benötigt, die sich im Verzeichnis `sql` befindet.
+* Die SQL-Dump-Datei wird in SQL-Plus mittels `start <Dateipfad/zur/sql-dump-datei.sql>` in die Datenbank importiert.
+* Beispiele
+  * Linux `start ~/Tutorium.sql`
+  * Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
 
 ## Datenbankmodell
 Gegeben sei folgender Situation:
@@ -12,7 +16,7 @@ Gegeben sei folgender Situation:
 
 Folgendes relationale Schema soll diesen Realitätsausschnitt abbilden:
 
-![Databasemodell](./img/schema_alt_klausur2.png)
+![Databasemodell](./img/schema_uebung_13.png)
 
 ## Aufgaben
 Führe das in Abschnitt Vorbereitung genannte Skript aus. Die untenstehenden Aufgaben beziehen sich auf das oben dargestellte relationale Schema.
