@@ -16,3 +16,6 @@ Eine Installationsanleitung für git ist in diesem repository [hinterlegt](https
 * [Übung 09](./uebung_09.md)
 * [Übung 10](./uebung_10.md)
 * [Übung 11](./uebung_11.md)
+* [Übung 12](./uebung_12.md)
+* [Übung 13](./uebung_13.md)
+
