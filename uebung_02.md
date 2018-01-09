@@ -8,7 +8,7 @@
   * Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
 
 ## Datenbankmodell
-![Datenbankmodell](./img/datamodler_schema.png)
+![Datenbankmodell](./img/schema_default.png)
 
 ## Aufgaben
 
