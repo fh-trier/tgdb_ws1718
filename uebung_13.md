@@ -4,6 +4,14 @@
 Der [SQL-Dump](./sql/04_schema_altklausur.sql) des Datenbankmodells befindet sich im Verzeichnis `sql`.
 
 ## Datenbankmodell
+Gegeben sei folgender Situation:
++ Ein Kunde kann eine oder mehrere Bestellungen aufgeben
++ In einer Bestellung wird wenigstens ein eventuell mehrere Artikel (in einer gewissen Menge) bestellt.
++ Eine Lieferung kann sich auch auf mehrere Bestellpositionen des gleichen Kunden beziehen.
++ Eine Bestellposition muss nicht gleich von Anfang an mit einer Lieferung verknüpft werden (also der Artikel nicht gleich ausgeliefert werden)!
+
+Folgendes relationale Schema soll diesen Realitätsausschnitt abbilden:
+
 ![Databasemodell](./img/schema_alt_klausur.png)
 
 ## Aufgaben
@@ -32,3 +40,23 @@ Gebe alle Kunden mit der Anzahl ihrer Bestellungen aus. Hier sollen auch Kunden 
 ```sql
 Deine Lösung
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
