@@ -88,7 +88,9 @@ Deine Lösung
 ### Aufgabe 9
 Erfassen Sie eine Bestellung, mit Bestellnr 100, dem Datum von heute und ordnen Sie es dem Kunden Hugo McKinnock zu.
 
-Dieser Kunde bestellt den Artikel **SAP for beginners** mit der Artikelnummer `123` und dem Verkaufspreis 25 Euro zwei mal. Zusätzlich bestellt der Kunde den Artikel mit der Artikelnummer `234` ein mal.
+Dieser Kunde bestellt den Artikel SAP for beginners mit der Artikelnummer `123` und dem Verkaufspreis 25 Euro zwei mal. Zusätzlich bestellt der Kunde den Artikel JAVA for dummies mit der Artikelnummer `234` ein mal.
+
+Löse die Aufgabe möglichst mit dynamischem SQL - subqueries.
 
 #### Lösung
 ```sql
