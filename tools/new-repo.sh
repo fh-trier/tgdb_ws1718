@@ -24,8 +24,8 @@ git config --global user.email ${EMAIL}
 echo "git config is up to date"
 
 # Create Workspace
-mkdir -p "${WORKSPACE}/${USER}"
-cd "${WORKSPACE}/${USER}"
+mkdir -p "${WORKSPACE}"
+cd "${WORKSPACE}"
 
 # Download repo
 git clone ${MASTER}

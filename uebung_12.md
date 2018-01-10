@@ -1,10 +1,15 @@
 # Tutorium - Grundlagen Datenbanken - Blatt 12
 
-## Vorbereitung
-Der [SQL-Dump](./sql/03_schema_altklausur.sql) des Datenbankmodells befindet sich im Verzeichnis `sql`.
+
+## Vorbereitungen
+* Für dieses Aufgabenblatt wird die SQL-Dump-Datei `schema_uebung_12.sql` benötigt, die sich im Verzeichnis `sql` befindet.
+* Die SQL-Dump-Datei wird in SQL-Plus mittels `start <Dateipfad/zur/sql-dump-datei.sql>` in die Datenbank importiert.
+* Beispiele
+  * Linux `start ~/Tutorium.sql`
+  * Windows `start C:\Users\max.mustermann\Desktop\Tutorium.sql`
 
 ## Datenbankmodell
-![Databasemodell](./img/schema_alt_klausur.png)
+![Datenbankmodell](./img/schema_uebung_12.png)
 
 ## Aufgaben
 Diese Aufgaben lehnen sich an eine Altklausur an. Jede Aufgabe gibt 5 Punkte. 1 Punkt entspricht einer Bearbeitungszeit von 1 Minute. Bei 13 Aufgaben entspricht das 65 Minuten. Versuchen Sie die 13 Aufgaben binnen 65 Minuten zu lösen.

@@ -5,7 +5,7 @@
 */
 
 /* String -> Datum */
-to_date('01.01.2016', dd.mm.yyyy)
+TO_DATE('01.01.2016', dd.mm.yyyy)
 
 /* Beispiel */
 SELECT *
