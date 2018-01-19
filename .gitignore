@@ -26,4 +26,4 @@ target
 **/*.odt
 
 # exclude old exam
-**/[kK][lL][aA][uU][sS][uU][rR]
+**/*[kK][lL][aA][uU][sS][uU][rR]*
