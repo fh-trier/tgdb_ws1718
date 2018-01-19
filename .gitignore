@@ -16,7 +16,14 @@ target
 **/*.lock
 **/*.tmp
 **/*.dia~
+**/*.swp
 
 # Generarted tex-files from pandoc
 **/*.tex
 
+# binaries
+**/*.pdf
+**/*.odt
+
+# exclude old exam
+**/[kK][lL][aA][uU][sS][uU][rR]
